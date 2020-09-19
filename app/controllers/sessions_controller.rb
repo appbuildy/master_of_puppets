@@ -2,7 +2,10 @@ class SessionsController < Devise::SessionsController
   respond_to :json
 
   def create
-    super
+    self.resource = AuthenticationService.new(params).call
+    sign_in(resource_name, resource)
+
+    respond_with resource, location: after_sign_in_path_for(resource)
   end
 
   private
