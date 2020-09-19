@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_09_19_142335) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "jwt_blacklists", force: :cascade do |t|
     t.string "jti"
     t.datetime "exp"
