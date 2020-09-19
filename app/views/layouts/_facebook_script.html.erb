@@ -1,0 +1,44 @@
+<script>
+  function statusChangeCallback(response) {
+      if (response.status === 'connected') {
+          var accessToken = response['authResponse']['accessToken'];
+          // EXAMPLE: Register or authenticate the user in our API
+          $.post('/login', { facebook: { access_token: accessToken } })
+            .done(function(data){
+                console.log('jwt token:', data['jwt']);
+              })
+            .fail(function(error){
+                console.log(error);
+              })
+        }
+    }
+  function checkLoginState() {
+      FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+    }
+  window.fbAsyncInit = function() {
+      FB.init({
+          appId      : <%= ENV['FB_APP_ID']%>,
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v8.0'
+        });
+
+      FB.AppEvents.logPageView();   
+
+      FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+
+    };
+
+  (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
