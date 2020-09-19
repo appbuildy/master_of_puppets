@@ -6,9 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-Dotenv::Railtie.load
+unless Rails.env.production?
+  Dotenv::Railtie.load
 
-HOSTNAME = ENV['HOSTNAME']
+  HOSTNAME = ENV['HOSTNAME']
+end
 
 
 module MasterOfPuppets
