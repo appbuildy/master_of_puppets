@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   root to: 'root#show'
-  devise_scope :user do
-    post '/facebook_user_token', to: 'oauth#facebook'
-  end
 
+  get '/me', to: 'me#show'
   devise_for :users,
              path: '',
              path_names: {
