@@ -5,6 +5,7 @@ ruby '2.5.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
+gem 'selenium-webdriver'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
