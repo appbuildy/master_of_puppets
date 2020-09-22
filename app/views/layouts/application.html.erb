@@ -5,9 +5,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= javascript_pack_tag 'features/dashboard/index'  %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'hello_react'  %>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -16,7 +18,7 @@
   </head>
 
   <body>
-    <fb:login-button 
+    <fb:login-button
     scope="public_profile,email"
     onlogin="checkLoginState();">
     </fb:login-button>
