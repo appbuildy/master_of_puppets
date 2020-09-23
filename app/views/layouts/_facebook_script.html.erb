@@ -5,7 +5,7 @@
           // EXAMPLE: Register or authenticate the user in our API
           $.post('/login', { facebook: { access_token: accessToken } })
             .done(function(data){
-                console.log('jwt token:', data['jwt']);
+                window.localStorage.setItem('jwt', data['jwt']);
               })
             .fail(function(error){
                 console.log(error);
