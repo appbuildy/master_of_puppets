@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
 import { Layout } from 'antd';
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 import Header from './header';
 import MyProjects from './my-projects';
 
@@ -11,10 +11,9 @@ const Dashboard = () => {
   return (
     <DashboardContainer>
       <Header />
-      <Content style={{ margin: '24px 16px' }}>
+      <Content style={{ margin: '24px 72px' }}>
         <MyProjects />
       </Content>
-      <Footer> footer </Footer>
     </DashboardContainer>
   );
 };

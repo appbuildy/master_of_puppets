@@ -14,13 +14,30 @@
  *= require_self
  */
 
-*, a, button {
+*,button {
     margin: 0;
     padding: 0;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: #111111;
+    color: #000000;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #007aff;
+}
+
+input {
+    font-weight: 400;
+}
+
+span {
+    font-weight: 300;
 }
 
 body {

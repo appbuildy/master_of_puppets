@@ -50,5 +50,5 @@ const ItemList = styled.div`
 const Item = styled.div`
   margin-right: 20px;
   cursor: pointer;
-  color: ${p => (p.isActive ? '#007aff' : '#111')};
+  color: ${p => (p.isActive ? '#007aff' : '#000')};
 `;
