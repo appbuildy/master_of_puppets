@@ -24,9 +24,7 @@ const Base = ({ setStepBase }) => {
   const handleSubmit = () => {
     const pureToken = token.trim();
     if (pureToken === '') {
-      setError('API Key should not be empty');
-    } else if (!pureToken.startsWith('key')) {
-      setError('API Key should start with key');
+      setError('Base link should not be empty');
     } else {
       setStepBase();
     }
