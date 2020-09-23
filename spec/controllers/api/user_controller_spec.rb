@@ -8,9 +8,16 @@ describe Api::UserController do
       sign_in user
     end
 
-    it 'updates user attributes' do
-      patch :update
+    subject do
+      patch :update, params: {
+        user: {
+          airtable_api_key: '322'
+        }
+      }
+    end
 
+    it 'updates user attributes' do
+      expect { subject }.to(change { user.reload.airtable_api_key })
       expect(response.status).to eq(200)
     end
   end

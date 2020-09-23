@@ -23,7 +23,8 @@ describe Api::ProjectsController do
     end
 
     it 'creates project with given params' do
-      expect { subject }.to change { user.projects.count }
+      expect { subject }
+        .to(change { user.projects.count })
     end
   end
 end
