@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   class UserController < BaseController
     before_action :authenticate_user!
