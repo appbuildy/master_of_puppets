@@ -19,7 +19,7 @@ const Base = ({ setStepBase }) => {
   const [error, setError] = useState('');
 
   const [isProtected, setIsProtected] = useState(false);
-  const [protectedPassword, setProtectedPassword] = useState('false');
+  const [protectedPassword, setProtectedPassword] = useState('');
 
   const handleSubmit = () => {
     const pureToken = token.trim();
