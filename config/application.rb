@@ -12,8 +12,6 @@ unless Rails.env.production?
   HOSTNAME = ENV['HOSTNAME']
 end
 
-config.assets.initialize_on_precompile = false
-
 
 module MasterOfPuppets
   class Application < Rails::Application
