@@ -6,8 +6,8 @@
           $.post('/login', { facebook: { access_token: accessToken } })
             .done(function(data){
                 window.localStorage.setItem('jwt', data['jwt']);
-                window.localStorage.setItem('url', 'www.appbuildy.com');
-                window.location.href = '/web/index.html
+                window.localStorage.setItem('url', "<%= ENV['HOST'] + '/me' %>");
+                window.location.href = '/web/index.html'
               })
             .fail(function(error){
                 console.log(error);

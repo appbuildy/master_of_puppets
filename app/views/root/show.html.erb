@@ -1,136 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-	<meta charset="utf-8">
-	<title>AppBuildy</title>
-	<meta name="description" content="Build Fast Native Apps without Code">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dest/preview.jpg">
-	<link rel="stylesheet" href="css/app.min.css">
+    <meta charset="utf-8">
+    <title>AppBuildy</title>
+    <meta name="description" content="Build Fast Native Apps without Code">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dest/preview.jpg">
+    <link rel="stylesheet" href="css/app.min.css">
 
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178992292-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<body>
+      gtag('config', 'UA-178992292-1');
+    </script>
 
-	<header>
-		<div class="container">
-			<nav class="menu">
-				<a href="#" class="menu__logo"><img src="images/logotype.svg" alt="logotype"></a>
-				<a href="#" class="menu__link">Features</a>
-				<a href="#" class="menu__link">Pricing</a>
-			</nav>
-			<div class="login">
-				<a href="#" class="btn_1 border-gradient">Log In</a>
-				<a href="#" class="btn_2">Sign Up</a>
-			</div>
-		</div>
-	</header>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-	<section class="hero">
-		<div class="container">
-			<h1 class="hero__title">Build <span class="fast">Fast</span> <span class="native">Native</span> Apps without Code</h1>
-			<p class="hero__description">Create, customize and launch mobile apps<br>in your browser with drag and drop.</p>
-			<a href="" class="hero__button btn_2">Get Started for Free</a>
-		</div>
-	</section>
+      ym(67635220, "init", {
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true,
+              webvisor:true
+            });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/67635220" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-	<section class="preview">
-		<div class="container">
-			<img src="images/dest/preview.jpg" alt="AppBuildy" class="preview__img">
-			<div class="preview__box">
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+              analytics.load("kr5OQ8YG9BOzzdqulUtigwAOVr2XRPGi");
+              analytics.page();
+            }}();
+    </script>
 
-				<div class="preview__item turquoise">
-					<h3 class="preview__title">Native look and feel experience for your iOS and Android apps</h3>
-					<p class="preview__description">With Flutter framework inside, you could never see the difference compared to the native apps.</p>
-					<div class="preview__icons">
-						<img src="images/icons/apple.svg" alt="apple">
-						<img src="images/icons/android.svg" alt="android">
-						<img src="images/icons/web.svg" alt="web">
-					</div>
-				</div>
+      <!-- Begin of Chaport Live Chat code -->
+      <script type="text/javascript">
+        (function(w,d,v3){
+                  w.chaportConfig = {
+                            appId : '5f6ceb5396c6b40369121e0f'
+                          };
 
-				<div class="preview__item pink">
-					<h3 class="preview__title">Rich customization for every element in a click</h3>
-					<p class="preview__description">Pick from a rich palette of themes or create your own branding system. Fonts, colors, sizes and so much more – everything is up to you.</p>
-					<div class="preview__icons">
-						<img src="images/icons/circle_1.svg" alt="circle">
-						<img src="images/icons/circle_2.svg" alt="circle">
-						<img src="images/icons/circle_3.svg" alt="circle">
-						<img src="images/icons/circle_4.svg" alt="circle">
-						<img src="images/icons/circle_5.svg" alt="circle">
-						<img src="images/icons/circle_6.svg" alt="circle">
-						<img src="images/icons/circle_7.svg" alt="circle">
-					</div>
-				</div>
+                  if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+      </script>
+      <!-- End of Chaport Live Chat code -->
 
-			</div>
-		</div>
-	</section>
+  </head>
 
-	<section class="integrations">
-		<div class="container">
-			<h2 class="title">Integrations Built In</h2>
-			<div class="integrations__wrapper">
-				<img src="images/icons/integration.svg" alt="integration" class="integrations__img">
-				<p class="integrations__title">Airtable</p>
-				<p class="integrations__description">Connect your tables to synchronize every listing, text or image in your app remotely. Add and edit data anytime you want.</p>
-				<a href="#" class="btn_2">Available now</a>
-			</div>
-		</div>
-	</section>
+  <body>
 
-	<section class="more">
-		<div class="container">
-			<p class="more__title">And so much more…</p>
-			<div class="more__wrapper">
+    <header>
+      <div class="container">
+        <nav class="menu">
+          <a href="#" class="menu__logo"><img src="images/logotype.svg" alt="logotype"></a>
+          <!-- <a href="#" class="menu__link">Features</a> -->
+          <!-- <a href="#" class="menu__link">Pricing</a> -->
+        </nav>
+        <div class="login">
+          <a href="#" class="btn_1 border-gradient">Log In</a>
+          <a href="#" class="btn_2">Request Access</a>
+        </div>
+      </div>
+    </header>
 
-				<div class="more__item">
-					<img src="images/icons/safari.svg" alt="safari" class="more__icon">
-					<p class="more__text"><span class="tomato">Blazing</span><br>Fast<br>Perfomance</p>
-				</div>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Build Elegant Native Apps <span class="fast">without</span> <span class="native">Code</span> </h1>
+        <p class="hero__description">Create, customize and launch mobile apps<br>in your browser with drag and drop.</p>
+        <a href="" class="hero__button btn_2">Request Access</a>
+      </div>
+    </section>
 
-				<div class="more__item">
-					<img src="images/icons/safari.svg" alt="safari" class="more__icon">
-					<p class="more__text"><span class="green">Simpliest</span><br>Builder<br>Interface</p>
-				</div>
+    <section class="preview">
+      <div class="container">
+        <img src="images/dest/preview.jpg" alt="AppBuildy" class="preview__img">
+        <div class="preview__box">
 
-				<div class="more__item">
-					<img src="images/icons/safari.svg" alt="safari" class="more__icon">
-					<p class="more__text"><span class="blue">Real Time</span><br>Preview<br>in the Web</p>
-				</div>
+          <div class="preview__item turquoise">
+            <h3 class="preview__title">Native look and feel experience for your iOS and Android apps</h3>
+            <p class="preview__description">With Flutter framework inside, you could never see the difference compared to the native apps.</p>
+            <div class="preview__icons">
+              <img src="images/icons/apple.svg" alt="apple">
+              <img src="images/icons/android.svg" alt="android">
+              <img src="images/icons/web.svg" alt="web">
+            </div>
+          </div>
 
-				<div class="more__item">
-					<img src="images/icons/safari.svg" alt="safari" class="more__icon">
-					<p class="more__text"><span class="violet">Responsive</span><br>Chat with<br>Support</p>
-				</div>
+          <div class="preview__item pink">
+            <h3 class="preview__title">Rich customization for every element in a click</h3>
+            <p class="preview__description">Pick from a rich palette of themes or create your own branding system. Fonts, colors, sizes and so much more – everything is up to you.</p>
+            <div class="preview__icons">
+              <img src="images/icons/circle_1.svg" alt="circle">
+              <img src="images/icons/circle_2.svg" alt="circle">
+              <img src="images/icons/circle_3.svg" alt="circle">
+              <img src="images/icons/circle_4.svg" alt="circle">
+              <img src="images/icons/circle_5.svg" alt="circle">
+              <img src="images/icons/circle_6.svg" alt="circle">
+              <img src="images/icons/circle_7.svg" alt="circle">
+            </div>
+          </div>
 
-			</div>
-		</div>
-	</section>
+        </div>
+      </div>
+    </section>
 
-	<section class="start">
-		<div class="container">
-			<img src="images/icons/logotype_icon.svg" alt="logotype icon" class="start__icon">
-			<h2 class="title">Just Give It a Try.</h2>
-			<a href="#" class="btn_2">Get Started for Free</a>
-		</div>
-	</section>
+    <section class="integrations">
+      <div class="container">
+        <h2 class="title">Integrations Built In</h2>
+        <div class="integrations__wrapper">
+          <img src="images/icons/integration.svg" alt="integration" class="integrations__img">
+          <p class="integrations__title">Airtable</p>
+          <p class="integrations__description">Connect your tables to synchronize every listing, text or image in your app remotely. Add and edit data anytime you want.</p>
+          <a href="#" class="btn_2">Available now</a>
+        </div>
+      </div>
+    </section>
 
-	<footer class="footer">
-		<div class="container">
-			<a href="#" class="footer__logo"><img src="images/logotype.svg" alt="logotype"></a>
-			<div class="footer__link">
-				<a href="#" class="footer__item">Terms of Use</a>
-				<a href="#" class="footer__item">Privacy Policy</a>
-			</div>
-		</div>
-	</footer>
+    <section class="more">
+      <div class="container">
+        <p class="more__title">And so much more…</p>
+        <div class="more__wrapper">
 
-	<script src="js/app.min.js"></script>
+          <div class="more__item">
+            <img src="images/icons/safari.svg" alt="safari" class="more__icon">
+            <p class="more__text"><span class="tomato">Blazing</span><br>Fast<br>Perfomance</p>
+          </div>
 
-</body>
+          <div class="more__item">
+            <img src="images/icons/safari.svg" alt="safari" class="more__icon">
+            <p class="more__text"><span class="green">Simpliest</span><br>Builder<br>Interface</p>
+          </div>
+
+          <div class="more__item">
+            <img src="images/icons/safari.svg" alt="safari" class="more__icon">
+            <p class="more__text"><span class="blue">Real Time</span><br>Preview<br>in the Web</p>
+          </div>
+
+          <div class="more__item">
+            <img src="images/icons/safari.svg" alt="safari" class="more__icon">
+            <p class="more__text"><span class="violet">Responsive</span><br>Chat with<br>Support</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="start">
+      <div class="container">
+        <img src="images/icons/logotype_icon.svg" alt="logotype icon" class="start__icon">
+        <h2 class="title">Just Give It a Try.</h2>
+        <a href="#" class="btn_2">Request Access</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="footer__logo"><img src="images/logotype.svg" alt="logotype"></a>
+        <div class="footer__link">
+          <a href="#" class="footer__item">Terms of Use</a>
+          <a href="#" class="footer__item">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.min.js"></script>
+
+  </body>
 
 </html>
