@@ -8,8 +8,11 @@ class AuthenticationService
   end
 
   def call
-    if params[:facebook][:access_token]
+    if params.dig(:facebook, :access_token)
       FacebookAuthentication.new(params[:facebook][:access_token]).call
+    elsif params[:user][:password]
+      user = User.find_by_email(params[:user][:email])
+      user&.valid_password?(params[:user][:password]) && user
     end
   end
 
