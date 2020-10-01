@@ -17,9 +17,9 @@ module Api
 
     def mock_projects
       [
-        { name: 'Name 1', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
-        { name: 'Name 2', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
-        { name: 'Name 3', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' }
+        { id: 1,name: 'Name 1', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
+        { id: 1,name: 'Name 2', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
+        { id: 1,name: 'Name 3', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' }
       ]
     end
 
