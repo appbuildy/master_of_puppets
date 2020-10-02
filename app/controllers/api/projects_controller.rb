@@ -3,9 +3,12 @@
 module Api
   class ProjectsController < BaseController
     before_action :authenticate_user!
+    MOCK = 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg'
 
     def index
-      render json: mock_projects
+      render json: current_user.projects.map do |pr|
+        pr.attributes.merge(photo: MOCK)
+      end
     end
 
     def create
@@ -14,14 +17,6 @@ module Api
     end
 
     private
-
-    def mock_projects
-      [
-        { id: 1,name: 'Name 1', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
-        { id: 1,name: 'Name 2', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' },
-        { id: 1,name: 'Name 3', updated_at: 10.hours.ago, photo: 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg' }
-      ]
-    end
 
     def project_params
       params
