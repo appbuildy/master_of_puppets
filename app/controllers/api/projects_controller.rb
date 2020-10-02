@@ -7,7 +7,12 @@ module Api
 
     def index
       render json: current_user.projects.map do |pr|
-        pr.attributes.merge(photo: MOCK)
+        {
+          id: pr.id,
+          photo: MOCK,
+          updated_at: pr.updated_at,
+          created_at: pr.created_at
+        }
       end
     end
 
