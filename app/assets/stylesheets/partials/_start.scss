@@ -1,0 +1,45 @@
+.start {
+  padding-top: 104px;
+  text-align: center;
+
+  &__icon {
+    padding-bottom: 26px;
+  }
+
+  .title {
+    padding-bottom: 34px;
+  }
+
+  .btn_2 {
+    padding: 12px 34px 14px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.480769px;
+  }
+}
+
+@media (max-width: 768px) {
+  .start {
+    padding-top: 50px;
+
+    &__icon {
+      padding-bottom: 12px;
+    }
+
+    .title {
+      padding-bottom: 19px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .start {
+    .btn_2 {
+      font-size: 18px;
+      width: 100%;
+      display: block;
+    }
+  }
+}

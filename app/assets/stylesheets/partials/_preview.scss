@@ -1,0 +1,130 @@
+.preview {
+  padding-top: 100px;
+  padding-bottom: 90px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    box-shadow: (0px 10px 60px rgba(0, 0, 0, 0.2));
+    border-radius: 25px;
+  }
+
+  &__box {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+    grid-gap: 20px;
+  }
+
+  &__item {
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      flex: 1;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.46341px;
+  }
+
+  &__description {
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  .turquoise {
+    background: linear-gradient(180deg, #E7FFFC 0%, #8EF2FF 100%);
+
+    .preview__icons {
+      img+img {
+        padding-left: 20px;
+      }
+    }
+
+    p {
+      padding-bottom: 25px;
+    }
+  }
+
+  .pink {
+    padding-bottom: 30px;
+    background: linear-gradient(180deg, #FFF7FB 0%, #FFC9F7 98.93%);
+
+    .preview__icons {
+      margin-left: -10px;
+    
+      img {
+        width: 50px;
+
+        &:first-child {
+          padding-right: 20px;
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .preview {
+    padding-bottom: 36px;
+
+    .container {
+      width: 100%;
+    }
+
+    &__img {
+      border-radius: 0;
+      box-shadow: (0px 0px 20px rgba(0, 0, 0, 0.3));
+    }
+
+    &__box {
+      padding-top: 36px;
+      grid-gap: 0;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+
+    &__item {
+      border-radius: 0;
+      padding: 22px 24px 54px;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+  
+    .pink {
+      padding: 22px 0 54px;
+    
+      .preview__title {
+        padding: 0 22px;
+      }
+
+      .preview__description {
+        padding: 0 22px;
+      }
+
+      .preview__icons {
+        display: flex;
+        overflow: hidden;
+        padding-left: 22px;
+      }
+    }
+  }
+}

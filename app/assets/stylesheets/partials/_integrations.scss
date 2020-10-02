@@ -1,0 +1,73 @@
+.integrations {
+  background: linear-gradient(177.37deg, #F2F2F5 2.19%, #F2F2F5 43.81%, #FFFFFF 82.29%);
+  padding-bottom: 130px;
+
+  .title {
+    padding: 100px 0 50px;
+  }
+
+  &__wrapper {
+    text-align: center;
+    background-image: url(../images/integration_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .btn_2 {
+      border-radius: 15px;
+      letter-spacing: -0.183673px;
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1.46341px;
+    padding-top: 20px;
+  }
+
+  &__description {
+    max-width: 484px;
+    margin: 0 auto;
+    color: #000;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations {
+    background: none;
+    padding-bottom: 30px;
+
+    .title {
+      padding: 0 0 30px;
+      max-width: 80%;
+      margin: 0 auto;
+      line-height: 42px;
+      letter-spacing: -1.1px;
+    }
+
+    &__wrapper {
+      background-position: top;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
