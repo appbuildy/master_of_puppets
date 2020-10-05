@@ -16,6 +16,10 @@ module Api
       end
     end
 
+    def show
+      render json: Project.find(params[:id])
+    end
+
     def create
       project = current_user.projects.create(project_params)
       render json: project
