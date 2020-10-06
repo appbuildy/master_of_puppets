@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   root to: 'root#show'
 
   get '/me', to: 'me#show'
+  resources :projects, only: %i[show]
 
   namespace :api, defaults: { format: :json } do
     resource :user, only: %i[update], controller: 'user'
