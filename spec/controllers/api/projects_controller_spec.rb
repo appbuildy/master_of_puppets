@@ -26,5 +26,10 @@ describe Api::ProjectsController do
       expect { subject }
         .to(change { user.projects.count })
     end
+
+    it 'fills airtable_credentials' do
+      subject
+      expect(user.projects.last.airtable_credentials['api_key']).to eq('key23')
+    end
   end
 end

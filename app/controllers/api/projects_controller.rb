@@ -30,7 +30,7 @@ module Api
     def project_params
       params
         .require(:project)
-        .permit(:name, :airtable_credentials)
+        .permit(:name, airtable_credentials: [:api_key, :base])
     end
   end
 end
