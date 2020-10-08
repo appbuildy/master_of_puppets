@@ -7,8 +7,17 @@ module Api
 
     def index
       render json: current_user.projects.map do |pr|
-        pr.attributes.merge(photo: MOCK)
+        {
+          id: pr.id,
+          photo: MOCK,
+          updated_at: pr.updated_at,
+          created_at: pr.created_at
+        }
       end
+    end
+
+    def show
+      render json: Project.find(params[:id])
     end
 
     def create
@@ -21,7 +30,7 @@ module Api
     def project_params
       params
         .require(:project)
-        .permit(:name, :airtable_credentials)
+        .permit(:name, airtable_credentials: [:api_key, :base])
     end
   end
 end
