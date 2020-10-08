@@ -1,15 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <%= stylesheet_link_tag "application" %>
-    
     <title>AppBuildy</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="description" content="Build Fast Native Apps without Code">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dest/preview.jpg">
 
-    <!-- <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Из всего бутстрапа нужен только bootstrap-reboot. Нужно будет подключить в проект пакет с бутстрапом и в стилях импортировать reboot, а этот линк удалить. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous" />
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'hello_react'  %> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178992292-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-178992292-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(67635220, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/67635220" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script>
+      ! function() {
+        var analytics = window.analytics = window.analytics || [];
+        if (!analytics.initialize)
+          if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware",
+              "setAnonymousId", "addDestinationMiddleware"
+            ];
+            analytics.factory = function(e) {
+              return function() {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics
+              }
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key)
+            }
+            analytics.load = function(key, e) {
+              var t = document.createElement("script");
+              t.type = "text/javascript";
+              t.async = !0;
+              t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
+              var n = document.getElementsByTagName("script")[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e
+            };
+            analytics.SNIPPET_VERSION = "4.13.1";
+            analytics.load("kr5OQ8YG9BOzzdqulUtigwAOVr2XRPGi");
+            analytics.page();
+          }
+      }();
+    </script>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+      (function(w, d, v3) {
+        w.chaportConfig = {
+          appId: '5f6ceb5396c6b40369121e0f'
+        };
+
+        if (w.chaport) return;
+        v3 = w.chaport = {};
+        v3._q = [];
+        v3._l = {};
+        v3.q = function() {
+          v3._q.push(arguments)
+        };
+        v3.on = function(e, fn) {
+          if (!v3._l[e]) v3._l[e] = [];
+          v3._l[e].push(fn)
+        };
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://app.chaport.com/javascripts/insert.js';
+        var ss = d.getElementsByTagName('script')[0];
+        ss.parentNode.insertBefore(s, ss)
+      })(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+
   </head>
 
   <body>
@@ -24,6 +135,30 @@
          crossorigin="anonymous"></script>
     <% end %>
     <%= yield %>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+
+    <!-- Нужно будет перенести на asset pipeline. -->
+    <script src="js/app.min.js"></script>
+
+    <script>
+      document.getElementById('buttonSelect').addEventListener('click', function() {
+        var preBody = {
+          email: document.getElementById('emailSelect').value,
+          who: document.getElementById('whoSelect').value,
+          need: document.getElementById('needSelect').value,
+        };
+        var body = JSON.stringify(preBody);
+        fetch('https://hooks.zapier.com/hooks/catch/8579222/owqflhq/', {
+          method: 'POST',
+          body: body,
+        }).then(function(){
+          document.getElementById('answer').style.display = 'none';
+          document.getElementById('formAnswer').style.display = 'block';
+        });
+      });
+    </script>
   </body>
 
 
