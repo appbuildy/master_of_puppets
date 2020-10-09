@@ -17245,7 +17245,7 @@ y8:function(a){var s
 if(P.Fo(a).gFB())return P.a9k(C.mD,a,C.a8,!1)
 s=this.gNd()
 if(s==null)s=""
-return P.a9k(C.mD,s+("https://www.appbuildy.com/app_build/"+H.b(a)),C.a8,!1)},
+return P.a9k(C.mD,s+("https://www.appbuildy.com/assets/"+H.b(a)),C.a8,!1)},
 dc:function(a,b){return this.ZO(a,b)},
 ZO:function(a,b){var s=0,r=P.at(t.yp),q,p=2,o,n=[],m=this,l,k,j,i,h,g,f,e
 var $async$dc=P.ap(function(c,d){if(c===1){o=d
@@ -50234,7 +50234,7 @@ $S:0}
 Z.Fh.prototype={
 E:function(a,b){return D.hF(new Z.ZX(this,!0))}}
 Z.ZX.prototype={
-$1:function(a){var s,r,q=null,p="https://www.appbuildy.com/app_build/icons/meta/action-undo.svg",o=this.a.c,n=o.ga1_(),m=o.a.gkR(),l=U.cj(p,o.a.gkR()?$.Lh():q,q,q,q),k=this.b
+$1:function(a){var s,r,q=null,p="https://www.appbuildy.com/assets/icons/meta/action-undo.svg",o=this.a.c,n=o.ga1_(),m=o.a.gkR(),l=U.cj(p,o.a.gkR()?$.Lh():q,q,q,q),k=this.b
 o=new Float64Array(16)
 o[15]=1
 s=Math.cos(3.141592653589793)
@@ -50536,7 +50536,7 @@ m.a.u(m)
 n=n.a
 m=H.a([],t.t)
 for(s=o.d.d.a,r=s.aC$,r.a.u(r),s=s.a,r=s.d9$,r.a.u(r),s=s.b,s=new H.S(s,new Z.a01(o),H.v(s).j("S<x.E,i*>")),s=new H.cH(s,s.gk(s));s.q();){q=s.d
-m.push(q)}m.push(T.bA(p,U.cj("https://www.appbuildy.com/app_build/icons/meta/status-bar.svg",p,p,p,p),p,p,0,p,0,p))
+m.push(q)}m.push(T.bA(p,U.cj("https://www.appbuildy.com/assets/icons/meta/status-bar.svg",p,p,p,p),p,p,0,p,0,p))
 s=o.d.d.a
 r=s.aC$
 r.a.u(r)
@@ -50782,7 +50782,7 @@ if(s!=r){s=this.d
 if(r)s.d1(0)
 else s.ea(0)}this.bM(a)},
 E:function(a,b){var s=this,r=null,q=$.aa_(),p=K.aH(6),o=t.t
-return D.bV(M.I(r,T.d6(C.a6,H.a([K.l3(s.e,new G.a3A(s),r),T.aF(H.a([T.bQ(D.b6(r,M.I(r,T.lg(T.aF(H.a([U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-mode-select.svg",r,r,r,r),T.a8(r,r,6),L.aN("Select",r,r,$.cD(),r)],o),C.j,C.cj),r,r),C.an,r,r,r,r,r,r,r,r),C.r,!1,r,r,r,r,r,r,r,r,r,r,r,new G.a3B(s),r,r,r,r,r,r),1),T.bQ(D.b6(r,M.I(r,T.lg(T.aF(H.a([L.aN("Play",r,r,$.cD(),r),T.a8(r,r,6),U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-mode-play.svg",r,r,r,r)],o),C.j,C.cj),r,r),C.an,r,r,r,r,r,r,r,r),C.r,!1,r,r,r,r,r,r,r,r,r,r,r,new G.a3C(s),r,r,r,r,r,r),1)],o),C.j,C.k)],o),C.V,C.aL,r),r,r,new S.U(r,r,r,p,r,q,r,C.l),r,36,r,r,r,r),C.U)}}
+return D.bV(M.I(r,T.d6(C.a6,H.a([K.l3(s.e,new G.a3A(s),r),T.aF(H.a([T.bQ(D.b6(r,M.I(r,T.lg(T.aF(H.a([U.cj("https://www.appbuildy.com/assets/icons/meta/btn-mode-select.svg",r,r,r,r),T.a8(r,r,6),L.aN("Select",r,r,$.cD(),r)],o),C.j,C.cj),r,r),C.an,r,r,r,r,r,r,r,r),C.r,!1,r,r,r,r,r,r,r,r,r,r,r,new G.a3B(s),r,r,r,r,r,r),1),T.bQ(D.b6(r,M.I(r,T.lg(T.aF(H.a([L.aN("Play",r,r,$.cD(),r),T.a8(r,r,6),U.cj("https://www.appbuildy.com/assets/icons/meta/btn-mode-play.svg",r,r,r,r)],o),C.j,C.cj),r,r),C.an,r,r,r,r,r,r,r,r),C.r,!1,r,r,r,r,r,r,r,r,r,r,r,new G.a3C(s),r,r,r,r,r,r),1)],o),C.j,C.k)],o),C.V,C.aL,r),r,r,new S.U(r,r,r,p,r,q,r,C.l),r,36,r,r,r,r),C.U)}}
 G.a3A.prototype={
 $2:function(a,b){var s,r=null,q=new E.ax(new Float64Array(16))
 q.bc()
@@ -50816,7 +50816,7 @@ n.a.u(n)
 p=p.a
 n=p.cZ$
 n.a.u(n)
-p=M.I(r,new K.mC(r,new F.hv(r,"https://www.appbuildy.com/app_build/icons/meta/btn-delete.svg",new F.Os(q,o),!1,r),p.d,C.hx,r),r,r,new S.U(r,r,new F.bk(C.n,C.n,C.n,new Y.bC(C.aS,1,C.z)),r,r,r,r,C.l),r,r,r,r,r,r)
+p=M.I(r,new K.mC(r,new F.hv(r,"https://www.appbuildy.com/assets/icons/meta/btn-delete.svg",new F.Os(q,o),!1,r),p.d,C.hx,r),r,r,new S.U(r,r,new F.bk(C.n,C.n,C.n,new Y.bC(C.aS,1,C.z)),r,r,r,r,C.l),r,r,r,r,r,r)
 q=L.aN("Name",r,r,$.cw(),r)
 n=o.cl$
 n.a.u(n)
@@ -50856,7 +50856,7 @@ s=$.dV()
 s=B.a9_(M.I(q,q,C.an,q,q,q,38,q,q,q,38),new S.U(q,q,q,q,q,m,q,C.aq),new S.U(q,q,q,q,q,s,q,C.aq),!0,!0,new U.ON(p,n),new U.OO(p,n),new U.OP(p,n),new U.OQ(p,n),new P.m(0,2))
 m=J.c1(n.b).split(".")[1]
 r=t.t
-return T.aO(H.a([M.I(q,new K.mC(new F.hv(q,"https://www.appbuildy.com/app_build/icons/meta/btn-close.svg",new U.OR(p),!1,q),s,m[0].toUpperCase()+J.Ly(m,1),C.hx,q),q,q,new S.U(q,q,new F.bk(C.n,C.n,C.n,new Y.bC(C.aS,1,C.z)),q,q,q,q,C.l),q,q,q,q,q,q),new T.ao(C.q3,T.aO(H.a([new T.qu(o,n.a),n.li(o)],r),C.j,C.k,C.q),q),T.a8(q,40,q)],r),C.j,C.k,C.q)},
+return T.aO(H.a([M.I(q,new K.mC(new F.hv(q,"https://www.appbuildy.com/assets/icons/meta/btn-close.svg",new U.OR(p),!1,q),s,m[0].toUpperCase()+J.Ly(m,1),C.hx,q),q,q,new S.U(q,q,new F.bk(C.n,C.n,C.n,new Y.bC(C.aS,1,C.z)),q,q,q,q,C.l),q,q,q,q,q,q),new T.ao(C.q3,T.aO(H.a([new T.qu(o,n.a),n.li(o)],r),C.j,C.k,C.q),q),T.a8(q,40,q)],r),C.j,C.k,C.q)},
 $S:10}
 U.OR.prototype={
 $0:function(){this.a.c.c.ey(0,null)},
@@ -51619,7 +51619,7 @@ $1:function(a){this.a.d.$1(J.yr(J.a7G(a,100)))},
 $S:2}
 E.ro.prototype={
 E:function(a,b){var s=this,r=null,q="CrossAlignment",p="MainAlignment",o=s.c,n=t.cQ,m=t.t
-return T.aO(H.a([V.rn("FontColor",o,s.e,s.d),T.a8(r,10,r),T.aF(H.a([T.a8(L.aN("Size",r,r,$.cw(),r),r,59),T.bQ(new F.e6(J.af(o.h(0,"FontSize")),H.a([new Q.a3("9",9,r),new Q.a3("10",10,r),new Q.a3("11",11,r),new Q.a3("12",12,r),new Q.a3("13",13,r),new Q.a3("14",14,r),new Q.a3("16",16,r),new Q.a3("18",18,r),new Q.a3("24",24,r),new Q.a3("36",36,r),new Q.a3("48",48,r),new Q.a3("56",56,r),new Q.a3("72",72,r),new Q.a3("96",96,r)],n),new E.OA(s),r,r,r),1)],m),C.j,C.a_),T.a8(r,10,r),T.aF(H.a([T.a8(L.aN("Weight",r,r,$.cw(),r),r,59),T.bQ(new F.e6(J.af(o.h(0,"FontWeight")),H.a([new Q.a3("Thin",C.jo,r),new Q.a3("Light",C.q7,r),new Q.a3("Regular",C.I,r),new Q.a3("Medium",C.ad,r),new Q.a3("Semi-Bold",C.q8,r),new Q.a3("Bold",C.cy,r),new Q.a3("Black",C.mj,r)],n),new E.OB(s),r,r,r),1)],m),C.j,C.a_),T.a8(r,13,r),T.aO(H.a([L.aN("Alignment",r,r,$.cw(),r),T.a8(r,9,r),T.aF(H.a([T.aF(H.a([new A.iO(J.d(J.af(o.h(0,q)),C.Y),"https://www.appbuildy.com/app_build/icons/text/horizontal-left.svg",new E.OC(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,q)),C.j),"https://www.appbuildy.com/app_build/icons/text/horizontal-center.svg",new E.OD(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,q)),C.je),"https://www.appbuildy.com/app_build/icons/text/horizontal-right.svg",new E.OE(s),r)],m),C.j,C.k),T.aF(H.a([new A.iO(J.d(J.af(o.h(0,p)),C.k),"https://www.appbuildy.com/app_build/icons/text/vertical-top.svg",new E.OF(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,p)),C.cj),"https://www.appbuildy.com/app_build/icons/text/vertical-center.svg",new E.OG(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,p)),C.kz),"https://www.appbuildy.com/app_build/icons/text/vertical-bottom.svg",new E.OH(s),r)],m),C.j,C.k)],m),C.j,C.a_)],m),C.Y,C.k,C.q)],m),C.j,C.k,C.kA)}}
+return T.aO(H.a([V.rn("FontColor",o,s.e,s.d),T.a8(r,10,r),T.aF(H.a([T.a8(L.aN("Size",r,r,$.cw(),r),r,59),T.bQ(new F.e6(J.af(o.h(0,"FontSize")),H.a([new Q.a3("9",9,r),new Q.a3("10",10,r),new Q.a3("11",11,r),new Q.a3("12",12,r),new Q.a3("13",13,r),new Q.a3("14",14,r),new Q.a3("16",16,r),new Q.a3("18",18,r),new Q.a3("24",24,r),new Q.a3("36",36,r),new Q.a3("48",48,r),new Q.a3("56",56,r),new Q.a3("72",72,r),new Q.a3("96",96,r)],n),new E.OA(s),r,r,r),1)],m),C.j,C.a_),T.a8(r,10,r),T.aF(H.a([T.a8(L.aN("Weight",r,r,$.cw(),r),r,59),T.bQ(new F.e6(J.af(o.h(0,"FontWeight")),H.a([new Q.a3("Thin",C.jo,r),new Q.a3("Light",C.q7,r),new Q.a3("Regular",C.I,r),new Q.a3("Medium",C.ad,r),new Q.a3("Semi-Bold",C.q8,r),new Q.a3("Bold",C.cy,r),new Q.a3("Black",C.mj,r)],n),new E.OB(s),r,r,r),1)],m),C.j,C.a_),T.a8(r,13,r),T.aO(H.a([L.aN("Alignment",r,r,$.cw(),r),T.a8(r,9,r),T.aF(H.a([T.aF(H.a([new A.iO(J.d(J.af(o.h(0,q)),C.Y),"https://www.appbuildy.com/assets/icons/text/horizontal-left.svg",new E.OC(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,q)),C.j),"https://www.appbuildy.com/assets/icons/text/horizontal-center.svg",new E.OD(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,q)),C.je),"https://www.appbuildy.com/assets/icons/text/horizontal-right.svg",new E.OE(s),r)],m),C.j,C.k),T.aF(H.a([new A.iO(J.d(J.af(o.h(0,p)),C.k),"https://www.appbuildy.com/assets/icons/text/vertical-top.svg",new E.OF(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,p)),C.cj),"https://www.appbuildy.com/assets/icons/text/vertical-center.svg",new E.OG(s),r),T.a8(r,r,8),new A.iO(J.d(J.af(o.h(0,p)),C.kz),"https://www.appbuildy.com/assets/icons/text/vertical-bottom.svg",new E.OH(s),r)],m),C.j,C.k)],m),C.j,C.a_)],m),C.Y,C.k,C.q)],m),C.j,C.k,C.kA)}}
 E.OA.prototype={
 $1:function(a){var s=new Y.cA()
 s.Y("FontSize",a.b,null)
@@ -51960,7 +51960,7 @@ nH:function(){this.d.d1(0)
 P.a8f(P.cz(0,200),new F.a5i(this),t.P)},
 VX:function(a){var s,r,q=null
 if(a===C.tv){s=t.t
-r=M.I(q,T.aF(H.a([U.cj("https://www.appbuildy.com/app_build/icons/settings/theme.svg",q,q,38,38),T.a8(q,q,12),T.aO(H.a([L.aN("Theme",q,q,$.cD(),q),T.a8(q,3,q),L.aN("App colors",q,q,$.cw(),q)],s),C.Y,C.k,C.q)],s),C.Y,C.k),C.an,q,q,q,q,q,q,q,q)}else r=q
+r=M.I(q,T.aF(H.a([U.cj("https://www.appbuildy.com/assets/icons/settings/theme.svg",q,q,38,38),T.a8(q,q,12),T.aO(H.a([L.aN("Theme",q,q,$.cD(),q),T.a8(q,3,q),L.aN("App colors",q,q,$.cw(),q)],s),C.Y,C.k,C.q)],s),C.Y,C.k),C.an,q,q,q,q,q,q,q,q)}else r=q
 return D.bV(D.b6(q,r,C.r,!1,q,q,q,q,q,q,q,q,q,q,q,new F.a5f(this,a),q,q,q,q,q,q),C.U)},
 E:function(a,b){return K.l3(this.e,new F.a5g(this,300),null)}}
 F.a5j.prototype={
@@ -51993,7 +51993,7 @@ n=new E.ax(new Float64Array(16))
 n.bc()
 n.nw(0,s*r)
 s=o.e
-return T.d6(C.a6,H.a([q,T.jg(p,s.gm(s)===1?M.I(p,p,p,p,p,p,p,p,p,p,p):M.I(p,T.aO(H.a([new K.mC(new F.hv(p,"https://www.appbuildy.com/app_build/icons/meta/btn-back.svg",o.gre(),!1,p),p,"Theme",p,p),new T.ao(new V.a5(20,24,10,0),new O.F8(o.a.c,p),p)],t.t),C.j,C.k,C.q),C.m,p,p,p,p,p,p,p,311),n,!0)],t.t),C.V,C.aL,p)},
+return T.d6(C.a6,H.a([q,T.jg(p,s.gm(s)===1?M.I(p,p,p,p,p,p,p,p,p,p,p):M.I(p,T.aO(H.a([new K.mC(new F.hv(p,"https://www.appbuildy.com/assets/icons/meta/btn-back.svg",o.gre(),!1,p),p,"Theme",p,p),new T.ao(new V.a5(20,24,10,0),new O.F8(o.a.c,p),p)],t.t),C.j,C.k,C.q),C.m,p,p,p,p,p,p,p,311),n,!0)],t.t),C.V,C.aL,p)},
 $C:"$2",
 $R:2,
 $S:134}
@@ -52037,19 +52037,19 @@ s=s.a
 return new S.kF(s.ga0(s),null)},
 $S:348}
 Y.hW.prototype={
-E:function(a,b){var s=this,r=null,q=$.hj(),p=K.aH(6),o=F.di(C.aS,1),n=$.dV(),m=K.aH(6),l=F.di(C.bk,1),k=s.e,j=J.c1(k==null?s.c.b:k).split(".")[1],i=s.d,h=i!=null?i[0].toUpperCase()+C.b.bo(i,1):j[0].toUpperCase()+J.Ly(j,1),g=D.bV(M.I(r,Y.ht(T.aO(H.a([U.cj("https://www.appbuildy.com/app_build/icons/layout/"+H.b(j)+".svg",r,r,56,r),L.aN(h,r,r,r,r),T.a8(r,10,r)],t.t),C.j,C.kz,C.kA),new S.U(r,r,o,p,r,q,r,C.l),new S.U(r,r,l,m,r,n,r,C.l)),r,r,r,r,86,r,r,r,86),C.U)
+E:function(a,b){var s=this,r=null,q=$.hj(),p=K.aH(6),o=F.di(C.aS,1),n=$.dV(),m=K.aH(6),l=F.di(C.bk,1),k=s.e,j=J.c1(k==null?s.c.b:k).split(".")[1],i=s.d,h=i!=null?i[0].toUpperCase()+C.b.bo(i,1):j[0].toUpperCase()+J.Ly(j,1),g=D.bV(M.I(r,Y.ht(T.aO(H.a([U.cj("https://www.appbuildy.com/assets/icons/layout/"+H.b(j)+".svg",r,r,56,r),L.aN(h,r,r,r,r),T.a8(r,10,r)],t.t),C.j,C.kz,C.kA),new S.U(r,r,o,p,r,q,r,C.l),new S.U(r,r,l,m,r,n,r,C.l)),r,r,r,r,86,r,r,r,86),C.U)
 q=s.c
 p=M.tr(C.aT,T.a8A(!1,q.iA(),0.4),C.T,r,0,r,r,r,C.bR)
 return new B.nw(q,new T.ao(C.q0,g,r),T.a8A(!1,new T.ao(C.q0,g,r),0.5),p,r,t.wc)}}
 G.kE.prototype={
 i:function(a){return this.b}}
 G.F7.prototype={
-pA:function(a){var s,r=null,q=a===this.c,p=a.b.split(".")[1],o=p[0].toUpperCase()+J.Ly(p,1),n=new S.U(r,r,r,C.lR,r,$.aa_(),r,C.l),m=q?C.cu:C.U,l=q?n:new S.U(r,r,r,C.lR,r,$.hj(),r,C.l),k=q?n:new S.U(r,r,r,C.lR,r,$.l_(),r,C.l),j="https://www.appbuildy.com/app_build/icons/menu/"+p+"-active.svg"
+pA:function(a){var s,r=null,q=a===this.c,p=a.b.split(".")[1],o=p[0].toUpperCase()+J.Ly(p,1),n=new S.U(r,r,r,C.lR,r,$.aa_(),r,C.l),m=q?C.cu:C.U,l=q?n:new S.U(r,r,r,C.lR,r,$.hj(),r,C.l),k=q?n:new S.U(r,r,r,C.lR,r,$.l_(),r,C.l),j="https://www.appbuildy.com/assets/icons/menu/"+p+"-active.svg"
 j=U.cj(j,q?r:new P.D(4289379026),r,r,r)
 s=T.a8(r,11,r)
 return D.b6(r,D.bV(M.I(r,Y.ht(T.aO(H.a([j,s,L.aN(o,r,r,A.ek(r,r,q?C.jb:C.bE,r,r,r,r,r,r,r,r,12,r,C.cy,r,r,!0,r,r,r,r,r,r),r)],t.t),C.j,C.cj,C.kA),l,k),r,r,r,r,90,r,r,r,80),m),C.r,!1,r,r,r,r,r,r,r,r,r,r,r,new G.ZL(this,a),r,r,r,r,r,r)},
 E:function(a,b){var s=this,r=null
-return T.aO(H.a([M.I(r,U.cj("https://www.appbuildy.com/app_build/icons/meta/logo.svg",r,r,r,r),r,r,new S.U(r,r,new F.bk(C.n,C.n,new Y.bC(C.aS,1,C.z),C.n),r,r,r,r,C.l),r,59,r,r,r,80),s.pA(C.oA),s.pA(C.iL),s.pA(C.oB),s.pA(C.oz)],t.t),C.j,C.k,C.q)}}
+return T.aO(H.a([M.I(r,U.cj("https://www.appbuildy.com/assets/icons/meta/logo.svg",r,r,r,r),r,r,new S.U(r,r,new F.bk(C.n,C.n,new Y.bC(C.aS,1,C.z),C.n),r,r,r,r,C.l),r,59,r,r,r,80),s.pA(C.oA),s.pA(C.iL),s.pA(C.oB),s.pA(C.oz)],t.t),C.j,C.k,C.q)}}
 G.ZL.prototype={
 $0:function(){this.a.d.$1(this.b)},
 $S:0}
@@ -52067,7 +52067,7 @@ $1:function(a){var s=null,r=L.aN("Navigate to",s,s,$.cw(),s),q=this.a,p=q.c.c,o=
 n.a.u(n)
 o=o.a
 n=H.v(o).j("S<x.E,a3*>")
-return T.aF(H.a([r,M.I(s,new F.e6(p,P.R(new H.S(o,new V.Z9(),n),!0,n.j("aQ.E")),new V.Za(q),s,T.a8(U.cj("https://www.appbuildy.com/app_build/icons/layout/btn-navigate.svg",s,s,s,s),16,20),s),s,s,s,s,s,s,s,s,170)],t.t),C.j,C.a_)},
+return T.aF(H.a([r,M.I(s,new F.e6(p,P.R(new H.S(o,new V.Z9(),n),!0,n.j("aQ.E")),new V.Za(q),s,T.a8(U.cj("https://www.appbuildy.com/assets/icons/layout/btn-navigate.svg",s,s,s,s),16,20),s),s,s,s,s,s,s,s,s,170)],t.t),C.j,C.a_)},
 $S:126}
 V.Za.prototype={
 $1:function(a){var s=this.a,r=s.c
@@ -52184,11 +52184,11 @@ yH:function(a){this.d.ea(0)
 this.a1(new R.a5e(this,a))},
 nH:function(){this.d.d1(0)
 P.a8f(P.cz(0,50),new R.a5d(this),t.P)},
-Nk:function(){var s=this,r=null,q="https://www.appbuildy.com/app_build/icons/meta/btn-plus.svg",p=U.cj(q,r,r,r,r),o=T.a8(r,17,r),n=s.a.c,m=t.t
+Nk:function(){var s=this,r=null,q="https://www.appbuildy.com/assets/icons/meta/btn-plus.svg",p=U.cj(q,r,r,r,r),o=T.a8(r,17,r),n=s.a.c,m=t.t
 return T.aO(H.a([new S.kF("Tabs & Pages",r),new T.ao(new V.a5(20,0,10,0),T.aO(H.a([new S.mB("Pages",r),new T.ao(C.hx,new Q.tE("Add Page",p,new R.a56(s),r),r),o,new D.Cb(n,r),T.a8(r,24,r),M.I(r,r,r,r,new S.U(C.aS,r,r,K.aH(5),r,r,r,C.l),r,1,r,r,r,260),new S.mB("Tabs",r),new T.ao(C.hx,new Q.tE("Add Tab",U.cj(q,r,r,r,r),new R.a57(s),r),r),T.a8(r,17,r),new M.EQ(s.gI4(),n,r),T.a8(r,17,r)],m),C.j,C.k,C.q),r)],m),C.j,C.k,C.q)},
 Ns:function(){var s=this,r=null,q=s.f
 if(q==null)return M.I(r,r,r,r,r,r,r,r,r,r,r)
-return T.aO(H.a([new K.mC(new F.hv(r,"https://www.appbuildy.com/app_build/icons/meta/btn-back.svg",s.gre(),!1,r),new F.hv(r,"https://www.appbuildy.com/app_build/icons/meta/btn-delete.svg",new R.a59(s),!1,r),q.a,r,r),T.a8(r,24,r),new T.ao(new V.a5(30,0,20,0),new V.EN(q,new R.a5a(s),s.a.c,r),r)],t.t),C.j,C.k,C.q)},
+return T.aO(H.a([new K.mC(new F.hv(r,"https://www.appbuildy.com/assets/icons/meta/btn-back.svg",s.gre(),!1,r),new F.hv(r,"https://www.appbuildy.com/assets/icons/meta/btn-delete.svg",new R.a59(s),!1,r),q.a,r,r),T.a8(r,24,r),new T.ao(new V.a5(30,0,20,0),new V.EN(q,new R.a5a(s),s.a.c,r),r)],t.t),C.j,C.k,C.q)},
 E:function(a,b){return K.l3(this.e,new R.a5b(this,300),null)}}
 R.a5e.prototype={
 $0:function(){this.a.f=this.b},
@@ -52702,7 +52702,7 @@ l=l.a
 k=t.t
 s=T.aF(H.a([new S.iP(n.d,new T.a_z(n),m),T.a8(m,m,11),L.aN("Actions on Tap",m,m,$.cD(),m)],k),C.j,C.k)
 if(n.d){r=L.aN("Navigate to",m,m,$.cw(),m)
-q=T.a8(U.cj("https://www.appbuildy.com/app_build/icons/layout/btn-navigate.svg",m,m,m,m),16,20)
+q=T.a8(U.cj("https://www.appbuildy.com/assets/icons/layout/btn-navigate.svg",m,m,m,m),16,20)
 l=l.x.h(0,"Tap")
 l=l.gm(l)
 if(l==null)l=m
@@ -52843,7 +52843,7 @@ n=o?10:16
 if(o)q=new T.ao(C.q1,!p?q:r.c,l)
 else q=M.I(l,l,l,l,l,l,l,l,l,l,l)
 s=r!=null?r.a:s.f
-return D.bV(Y.ht(new T.ao(new V.a5(n,9,10,8),T.aF(H.a([q,T.bQ(M.I(l,L.aN(s,l,l,$.cD(),l),l,l,l,l,l,l,l,l,l),1),U.cj("https://www.appbuildy.com/app_build/icons/meta/expand-vertical.svg",$.Lh(),l,l,l)],t.t),C.j,C.a_),l),new S.U(l,l,h,k,l,j,l,C.l),new S.U(l,l,i,g,l,f,l,C.l)),C.U)},
+return D.bV(Y.ht(new T.ao(new V.a5(n,9,10,8),T.aF(H.a([q,T.bQ(M.I(l,L.aN(s,l,l,$.cD(),l),l,l,l,l,l,l,l,l,l),1),U.cj("https://www.appbuildy.com/assets/icons/meta/expand-vertical.svg",$.Lh(),l,l,l)],t.t),C.j,C.a_),l),new S.U(l,l,h,k,l,j,l,C.l),new S.U(l,l,i,g,l,f,l,C.l)),C.U)},
 O2:function(){var s,r,q,p=this,o={},n=p.c.gI(),m=n.k4,l=T.dp(n.c9(0,null),C.h),k=C.c.gG(p.a.d).b,j=C.c.gac(p.a.d).b,i=F.bZ(p.c,!1).a
 o.a=null
 s=m.b
@@ -52940,7 +52940,7 @@ wZ:function(a,b){return this.e.$1(b)}}
 G.I3.prototype={
 ve:function(){var s=null,r=K.aH(6),q=$.a9Z(),p=F.di($.ql(),1),o=H.a([],t.O),n=this.a.d
 n=new H.aB(n,new G.a3m(this),H.aa(n).j("aB<1>"))
-return D.bV(M.I(s,new T.ao(C.jl,T.aF(H.a([M.I(s,L.aN(n.gG(n).a,s,s,$.cD(),s),s,s,s,s,s,s,s,s,s),U.cj("https://www.appbuildy.com/app_build/icons/meta/expand-vertical.svg",$.Lh(),s,s,s)],t.t),C.j,C.a_),s),s,s,new S.U(s,s,p,r,o,q,s,C.l),s,s,s,s,s,s),C.U)},
+return D.bV(M.I(s,new T.ao(C.jl,T.aF(H.a([M.I(s,L.aN(n.gG(n).a,s,s,$.cD(),s),s,s,s,s,s,s,s,s,s),U.cj("https://www.appbuildy.com/assets/icons/meta/expand-vertical.svg",$.Lh(),s,s,s)],t.t),C.j,C.a_),s),s,s,new S.U(s,s,p,r,o,q,s,C.l),s,s,s,s,s,s),C.U)},
 Ed:function(a,b,c){var s,r,q,p,o=null,n=J.d(a.b,this.a.c)
 if(b||c)if(b&&c)s=K.aH(5)
 else s=b?new K.by(new P.aE(5,5),new P.aE(5,5),C.w,C.w):new K.by(C.w,C.w,new P.aE(5,5),new P.aE(5,5))
@@ -53136,7 +53136,7 @@ Mz:function(a){this.a1(new B.a5T(this))},
 Mx:function(a){this.a1(new B.a5S(this))},
 E:function(a,b){var s,r=this,q=null,p=r.W3()
 if(r.f||r.e||r.a.r){s=r.a.d
-s=T.bA(q,D.b6(q,T.iM(D.bV(M.I(q,U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-more.svg",r.r||r.e?q:C.b4,C.lT,q,q),C.an,q,q,q,q,q,q,q,q),C.U),C.bC,q,new B.a5X(r),new B.a5Y(r),!0),C.r,!1,q,q,q,q,q,q,q,q,q,q,q,new B.a5Z(r,b),q,q,q,q,q,q),q,q,q,s.a,s.b,q)}else s=M.I(q,q,q,q,q,q,q,q,q,q,q)
+s=T.bA(q,D.b6(q,T.iM(D.bV(M.I(q,U.cj("https://www.appbuildy.com/assets/icons/meta/btn-more.svg",r.r||r.e?q:C.b4,C.lT,q,q),C.an,q,q,q,q,q,q,q,q),C.U),C.bC,q,new B.a5X(r),new B.a5Y(r),!0),C.r,!1,q,q,q,q,q,q,q,q,q,q,q,new B.a5Z(r,b),q,q,q,q,q,q),q,q,q,s.a,s.b,q)}else s=M.I(q,q,q,q,q,q,q,q,q,q,q)
 return T.iM(T.d6(C.a6,H.a([p,s],t.t),C.V,C.aL,q),C.bC,q,r.gMw(),r.gMy(),!0)}}
 B.a5R.prototype={
 $1:function(a){var s,r,q,p,o,n,m,l=this,k=null,j=l.a,i=D.b6(k,M.I(k,k,C.an,k,k,k,k,k,k,k,k),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5L(j),k,k,k,k,k,k),h=j.a.x,g=l.b,f=g.a
@@ -53146,12 +53146,12 @@ h=h?g+l.c.a-7:g-15
 g=H.a([new O.d0(0,P.az(C.K.ai(25.5),0,0,0),new P.m(0,2),10)],t.O)
 s=F.di($.ql(),1)
 r=K.aH(6)
-q=j.a.z!=null?D.b6(k,j.vd(U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-rearrange-top.svg",C.b4,k,24,24),!0,"Bring to Front"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5M(j),k,k,k,k,k,k):M.I(k,k,k,k,k,k,k,k,k,k,k)
-p=j.a.Q!=null?D.b6(k,j.vd(U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-rearrange-bottom.svg",C.b4,k,24,24),!0,"Send to Back"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5N(j),k,k,k,k,k,k):M.I(k,k,k,k,k,k,k,k,k,k,k)
+q=j.a.z!=null?D.b6(k,j.vd(U.cj("https://www.appbuildy.com/assets/icons/meta/btn-rearrange-top.svg",C.b4,k,24,24),!0,"Bring to Front"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5M(j),k,k,k,k,k,k):M.I(k,k,k,k,k,k,k,k,k,k,k)
+p=j.a.Q!=null?D.b6(k,j.vd(U.cj("https://www.appbuildy.com/assets/icons/meta/btn-rearrange-bottom.svg",C.b4,k,24,24),!0,"Send to Back"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5N(j),k,k,k,k,k,k):M.I(k,k,k,k,k,k,k,k,k,k,k)
 j.a.toString
-o=D.b6(k,j.vd(U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-duplicate.svg",C.b4,k,24,24),!0,"Duplicate"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5O(j),k,k,k,k,k,k)
+o=D.b6(k,j.vd(U.cj("https://www.appbuildy.com/assets/icons/meta/btn-duplicate.svg",C.b4,k,24,24),!0,"Duplicate"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5O(j),k,k,k,k,k,k)
 j.a.toString
-n=D.b6(k,j.VY(U.cj("https://www.appbuildy.com/app_build/icons/meta/btn-delete.svg",C.b4,k,26,26),!0,"Delete"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5P(j),k,k,k,k,k,k)
+n=D.b6(k,j.VY(U.cj("https://www.appbuildy.com/assets/icons/meta/btn-delete.svg",C.b4,k,26,26),!0,"Delete"),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5P(j),k,k,k,k,k,k)
 m=t.t
 return T.d6(C.a6,H.a([i,T.bA(k,D.b6(k,M.tr(C.aT,new T.ao(C.x3,M.I(k,T.aO(H.a([q,p,o,n],m),C.Y,C.k,C.q),k,k,new S.U(C.m,k,s,r,g,k,k,C.l),k,k,k,k,k,k),k),C.T,C.an,0,k,k,k,C.bR),C.r,!1,k,k,k,k,k,k,k,k,k,k,k,new B.a5Q(j),k,k,k,k,k,k),k,k,f,k,h,170)],m),C.V,C.cl,k)},
 $S:34}
