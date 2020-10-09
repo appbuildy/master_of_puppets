@@ -9,6 +9,35 @@ describe Api::ProjectsController do
     sign_in user
   end
 
+  describe 'PATCH #update' do
+    let(:project) { create :project, user: user }
+
+    subject do
+      patch :update, params: {
+        id: project.id,
+        project: {
+          name: 'Test',
+          canvas: {
+            screens: [
+              elements: {
+                name: '3222'
+              }
+            ]
+          },
+          airtable_credentials: {
+            api_key: 'key23',
+            base: 'base'
+          }
+        }
+      }
+    end
+
+    it 'updates project' do
+      subject
+      expect(project.reload.canvas['screens']).not_to be_blank
+    end
+  end
+
   describe 'POST #create' do
     subject do
       post :create, params: {
