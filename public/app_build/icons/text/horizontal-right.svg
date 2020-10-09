@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>btn-style-text-align-right-highlighted</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00B2FF" offset="0%"></stop>
+            <stop stop-color="#007AFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="btn-style-text-align-right-highlighted" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19,24 C19.5522847,24 20,24.4477153 20,25 C20,25.5522847 19.5522847,26 19,26 L7,26 C6.44771525,26 6,25.5522847 6,25 C6,24.4477153 6.44771525,24 7,24 L19,24 Z M13,18 C13.5522847,18 14,18.4477153 14,19 C14,19.5522847 13.5522847,20 13,20 L7,20 C6.44771525,20 6,19.5522847 6,19 C6,18.4477153 6.44771525,18 7,18 L13,18 Z M19,12 C19.5522847,12 20,12.4477153 20,13 C20,13.5522847 19.5522847,14 19,14 L7,14 C6.44771525,14 6,13.5522847 6,13 C6,12.4477153 6.44771525,12 7,12 L19,12 Z M25,6 C25.5522847,6 26,6.44771525 26,7 C26,7.55228475 25.5522847,8 25,8 L7,8 C6.44771525,8 6,7.55228475 6,7 C6,6.44771525 6.44771525,6 7,6 L25,6 Z" id="Combined-Shape" fill="url(#linearGradient-1)" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) "></path>
+    </g>
+</svg>
