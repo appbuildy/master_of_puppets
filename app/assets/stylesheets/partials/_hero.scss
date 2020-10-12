@@ -1,3 +1,15 @@
+@keyframes keks {
+  from {
+    background-position: right bottom,
+                         center;
+  }
+
+  to {
+    background-position: left top,
+                         center;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -12,15 +24,16 @@
     color: #222427;
     padding-bottom: 21px;
 
-    .fast {
-      background: -webkit-linear-gradient(-54.8deg, #005CFF 4.63%, #00D4FF 92.12%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .native {
-      background: -webkit-linear-gradient(-60deg, #00C6FF 62.66%, #0036FF 92.12%);
-      -webkit-background-clip: text;
+    &--animated {
+      animation: keks 2.5s linear infinite;
+      background-image: linear-gradient(-60deg, rgba(0, 196, 255, 0) 30%, rgb(0, 196, 255) 45%, rgb(0, 196, 255) 55%, rgba(0, 196, 255, 0) 70%),
+                        linear-gradient(-55deg, #0051E9 2.3%, #009DFF 14%, #009DFF 60%, #0051E9 97%);
+      background-size: 400% 400%,
+                       auto;
+      background-repeat: repeat,
+                         no-repeat;
+      -webkit-background-clip: text,
+                               text;
       -webkit-text-fill-color: transparent;
     }
   }
