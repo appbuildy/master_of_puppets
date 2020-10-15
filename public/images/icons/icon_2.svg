@@ -1,12 +1,1 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="30" cy="30" r="30" fill="url(#paint0_radial)"/>
-<path d="M29.148 12.3862C29.5384 11.751 30.4616 11.751 30.852 12.3862L38.5899 24.9764C38.9994 25.6427 38.52 26.5 37.7379 26.5H22.2621C21.48 26.5 21.0006 25.6427 21.4101 24.9764L29.148 12.3862Z" fill="white"/>
-<circle cx="20.5" cy="37.5" r="7.5" fill="white"/>
-<rect opacity="0.6" x="32" y="30" width="15" height="15" rx="2" fill="white"/>
-<defs>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20.5 3) rotate(67.9196) scale(57.1948 82.9654)">
-<stop stop-color="#21F41B"/>
-<stop offset="1" stop-color="#01B626"/>
-</radialGradient>
-</defs>
-</svg>
+<svg width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="url(#paint0_radial)"/><path d="M29.148 12.3862c.3904-.6352 1.3136-.6352 1.704 0l7.7379 12.5902c.4095.6663-.0699 1.5236-.852 1.5236H22.2621c-.7821 0-1.2615-.8573-.852-1.5236l7.7379-12.5902z" fill="#fff"/><circle cx="20.5" cy="37.5" r="7.5" fill="#fff"/><rect opacity=".6" x="32" y="30" width="15" height="15" rx="2" fill="#fff"/><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(21.49994 52.99998 -76.8805 31.1873 20.5 3)"><stop stop-color="#21F41B"/><stop offset="1" stop-color="#01B626"/></radialGradient></defs></svg>

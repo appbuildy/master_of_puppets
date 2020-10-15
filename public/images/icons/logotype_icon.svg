@@ -1,13 +1,1 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="30" cy="30" r="30" fill="url(#paint0_linear)"/>
-<rect x="13.3954" y="13.3954" width="15.0698" height="15.0698" rx="3.34884" fill="white"/>
-<rect x="13.3954" y="31.814" width="15.0698" height="15.0698" rx="3.34884" fill="white"/>
-<rect x="31.814" y="31.814" width="15.0698" height="15.0698" rx="3.34884" fill="white"/>
-<rect x="39.3488" y="10.2743" width="15.0698" height="15.0698" rx="3.34884" transform="rotate(45 39.3488 10.2743)" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="60" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00B2FF"/>
-<stop offset="1" stop-color="#007AFF"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="30" fill="url(#paint0_linear)"/><rect x="13.3954" y="13.3954" width="15.0698" height="15.0698" rx="3.34884" fill="#fff"/><rect x="13.3954" y="31.814" width="15.0698" height="15.0698" rx="3.34884" fill="#fff"/><rect x="31.814" y="31.814" width="15.0698" height="15.0698" rx="3.34884" fill="#fff"/><rect x="39.3488" y="10.2743" width="15.0698" height="15.0698" rx="3.34884" transform="rotate(45 39.3488 10.2743)" fill="#fff"/><defs><linearGradient id="paint0_linear" x1="0" y1="0" x2="0" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#00B2FF"/><stop offset="1" stop-color="#007AFF"/></linearGradient></defs></svg>
