@@ -1,5 +1,5 @@
 class UpvotyController < ApplicationController
-  layout 'upvoty'
+  layout nil
 
   def show
     response.headers.delete "X-Frame-Options"
