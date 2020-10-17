@@ -13,6 +13,7 @@ Rails.application.routes.draw do
                registrations: 'registrations'
              }
   root to: 'root#show'
+  resource: upvoty, only: %i[show]
 
   get '/me', to: 'me#show'
   resources :projects, only: %i[show]
@@ -22,6 +23,5 @@ Rails.application.routes.draw do
     resources :projects
     resources :airtable_tables, only: %i[index]
 
-  get 'upvoty' => 'upvoty#show'
   end
 end
