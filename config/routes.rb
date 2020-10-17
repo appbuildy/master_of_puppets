@@ -21,5 +21,7 @@ Rails.application.routes.draw do
     resource :user, only: %i[update], controller: 'user'
     resources :projects
     resources :airtable_tables, only: %i[index]
+
+  get 'upvoty' => 'upvoty#show'
   end
 end
