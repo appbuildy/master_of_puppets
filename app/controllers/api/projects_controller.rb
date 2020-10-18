@@ -10,7 +10,8 @@ module Api
       render json: current_user.projects.map do |pr|
         {
           id: pr.id,
-          photo: MOCK,
+          photo: ActionController::Base.helpers.asset_path(Project.random_photo),
+          gradient: Project.random_gradient,
           updated_at: pr.updated_at,
           created_at: pr.created_at
         }

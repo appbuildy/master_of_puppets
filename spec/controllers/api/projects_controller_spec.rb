@@ -9,6 +9,19 @@ describe Api::ProjectsController do
     sign_in user
   end
 
+  describe 'GET #index' do
+    let!(:project) { create :project, user: user }
+    subject do
+      get :index
+    end
+
+    it 'renders' do
+      subject
+
+      expect(JSON(response.body).count).to eq(1)
+    end
+  end
+
   describe 'PATCH #update' do
     let(:project) { create :project, user: user }
 
