@@ -4,7 +4,6 @@ module Api
   class ProjectsController < BaseController
     before_action :authenticate_user!
     before_action :set_project, except: %i[index create]
-    MOCK = 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg'
 
     def index
       render json: current_user.projects.map do |pr|
