@@ -8,6 +8,7 @@ module Api
     def index
       projects = current_user.projects.map do |pr|
         {
+          name: pr.name,
           id: pr.id,
           photo: ActionController::Base.helpers.asset_url(Project.random_photo),
           gradient: Project.random_gradient,
