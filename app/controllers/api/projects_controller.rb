@@ -6,7 +6,7 @@ module Api
     before_action :set_project, except: %i[index create]
 
     def index
-      render json: current_user.projects.map do |pr|
+      projects = current_user.projects.map do |pr|
         {
           id: pr.id,
           photo: ActionController::Base.helpers.asset_path(Project.random_photo),
@@ -15,6 +15,7 @@ module Api
           created_at: pr.created_at
         }
       end
+      render json: projects
     end
 
     def update
