@@ -2,16 +2,16 @@ class Project < ApplicationRecord
   belongs_to :user
 
   def self.random_gradient
-    %w[
-      linear-gradient(to right, #d3959b, #bfe6ba)
-      linear-gradient(to right, #f2709c, #ff9472) 
-      linear-gradient(to right, #ddd6f3, #faaca8)
-      linear-gradient(to right, #c21500, #ffc500)
-      linear-gradient(to right, #4b6cb7, #182848)
-      linear-gradient(to right, #fc354c, #0abfbc)
-      linear-gradient(to right, #5f2c82, #49a09d)
-      linear-gradient(to right, #7474bf, #348ac7)
-      linear-gradient(to right, #ed4264, #ffedbc)
+  [
+      'linear-gradient(to right, #d3959b, #bfe6ba)',
+      'linear-gradient(to right, #f2709c, #ff9472)', 
+      'linear-gradient(to right, #ddd6f3, #faaca8)',
+      'linear-gradient(to right, #c21500, #ffc500)',
+      'linear-gradient(to right, #4b6cb7, #182848)',
+      'linear-gradient(to right, #fc354c, #0abfbc)',
+      'linear-gradient(to right, #5f2c82, #49a09d)',
+      'linear-gradient(to right, #7474bf, #348ac7)',
+      'linear-gradient(to right, #ed4264, #ffedbc)'
     ].sample
   end
 
