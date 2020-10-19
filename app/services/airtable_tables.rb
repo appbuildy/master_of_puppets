@@ -6,7 +6,7 @@ class AirtableTables
   end
 
   def call
-    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
+    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless', 'no-sandbox', 'disable-dev-shm-usage'])
     driver = Selenium::WebDriver.for(:chrome, options: options)
     driver.get(shared_url)
     elements = driver.find_elements(css: CSS)
@@ -18,6 +18,7 @@ class AirtableTables
         url: el.attribute('href')
       )
     end.compact
+    driver.quit
   end
 
   attr_reader :shared_url
