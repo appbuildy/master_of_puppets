@@ -42,8 +42,12 @@ module Api
     private
 
     def set_project
-      @project = current_user.projects.find_by(id: params[:id]) ||
-        Project.find_by(slug: params[:id])
+      @project =
+        if current_user
+          current_user.projects.find_by(id: params[:id])
+        else
+          Project.find_by(slug: params[:id])
+        end
     end
 
     def project_params
