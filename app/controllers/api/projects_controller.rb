@@ -27,7 +27,8 @@ module Api
     def show
       project = @project
         .attributes
-        .merge(public_url: project_url(id: @project.id, project_id: @project.slug))
+        .merge(public_url: project_url(id: @project.id, project_preview: true,
+                                       project_id: @project.slug))
       render json: project
     end
 
