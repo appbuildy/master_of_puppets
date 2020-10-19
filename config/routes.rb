@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   resource :upvoty, only: %i[show], controller: 'upvoty'
 
   get '/me', to: 'me#show'
-  resources :projects, only: %i[show]
+  resources :projects, only: %i[show] do
+    resource :tokens, controller: 'projects/token'
+  end
 
   namespace :api, defaults: { format: :json } do
     resource :user, only: %i[update], controller: 'user'
