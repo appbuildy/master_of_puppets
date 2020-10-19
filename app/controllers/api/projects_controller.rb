@@ -29,7 +29,9 @@ module Api
     end
 
     def create
-      project = current_user.projects.create(project_params)
+      project = current_user.projects
+        .create(project_params.merge(slug:Haikunator.haikunate))
+
       render json: project
     end
 
