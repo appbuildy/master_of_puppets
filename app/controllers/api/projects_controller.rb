@@ -2,7 +2,7 @@
 
 module Api
   class ProjectsController < BaseController
-    before_action :authenticate_user!
+    before_action :authenticate_user!, except: %i[show]
     before_action :set_project, except: %i[index create]
 
     def index
@@ -30,7 +30,7 @@ module Api
 
     def create
       project = current_user.projects
-        .create(project_params.merge(slug:Haikunator.haikunate))
+        .create(project_params.merge(slug: Haikunator.haikunate))
 
       render json: project
     end
@@ -38,7 +38,8 @@ module Api
     private
 
     def set_project
-      @project = current_user.projects.find(params[:id])
+      @project = current_user.projects.find_by(id: params[:id]) ||
+        Project.find_by(slug: params[:id])
     end
 
     def project_params
