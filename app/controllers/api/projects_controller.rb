@@ -25,7 +25,10 @@ module Api
     end
 
     def show
-      render json: @project
+      project = @project
+        .attributes
+        .merge(public_url: project_url(id: @project.id, project_id: @project.slug))
+      render json: project
     end
 
     def create
