@@ -11,7 +11,7 @@ class AirtableTables
     driver.get(shared_url)
     elements = driver.find_elements(css: CSS)
 
-    elements.map do |el|
+    elems = elements.map do |el|
       next if el.text.blank?
       OpenStruct.new(
         name: el.text,
@@ -19,6 +19,8 @@ class AirtableTables
       )
     end.compact
     driver.quit
+
+    elems
   end
 
   attr_reader :shared_url
