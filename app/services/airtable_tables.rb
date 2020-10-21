@@ -3,7 +3,6 @@ require 'open-uri'
 class AirtableTables
   DATA_REGEX = /window.initData = (?<json>.*)/
   SEARCH_TERM = 'window.initData ='
-  CSS = '.flex.items-center.max-width-2.no-user-select.pr2.pl2'
 
   def initialize(shared_url = 'https://airtable.com/shrRZPMRGEuB2PJgR')
     @shared_url = shared_url
