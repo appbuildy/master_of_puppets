@@ -22,6 +22,7 @@ gem 'turbolinks', '~> 5'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'jbuilder', '~> 2.7'
 gem 'rack-cors'
+gem 'rest-client'
 gem 'haikunator'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'koala'

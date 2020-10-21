@@ -8,6 +8,8 @@ class AirtableCredentials
   end
 
   def to_hash
+    return {} if credentials.blank?
+
     {
       api_key: credentials['api_key'],
       shared_url: credentials['base'],
