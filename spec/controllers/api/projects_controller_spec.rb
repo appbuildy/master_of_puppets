@@ -10,9 +10,18 @@ describe Api::ProjectsController do
   end
 
   describe 'GET #show' do
+    before do
+      allow(AirtableTables)
+        .to receive(:new)
+        .and_return(double(call: []))
+    end
+
     let!(:project) { create :project, user: user }
 
     context 'when given slug' do
+      before do
+        sign_out user
+      end
       subject { get :show, params: { id: project.slug } }
 
       it 'returns project by given slug' do

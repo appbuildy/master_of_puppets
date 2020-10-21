@@ -6,6 +6,8 @@ class AirtableTables
   end
 
   def call
+    return [] if shared_url.blank?
+
     options = Selenium::WebDriver::Chrome::Options.new(args: ['headless', 'no-sandbox', 'disable-dev-shm-usage'])
     driver = Selenium::WebDriver.for(:chrome, options: options)
     driver.get(shared_url)

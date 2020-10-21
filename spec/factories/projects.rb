@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :project do
     name { "MyString" }
-    airtable_credentials  {}
     slug { Haikunator.haikunate }
+    airtable_credentials { {} }
   end
 end

@@ -27,8 +27,11 @@ module Api
     def show
       project = @project
         .attributes
-        .merge(public_url: project_url(id: @project.id, project_preview: true,
-                                       project_id: @project.slug))
+        .merge(
+          public_url: project_url(id: @project.id, project_preview: true, project_id: @project.slug),
+          tables: AirtableTables.new(@project.airtable_credentials['base']).call.map(&:to_h),
+          airtable_credentials: AirtableCredentials.new(@project.airtable_credentials).to_hash
+        )
       render json: project
     end
 
