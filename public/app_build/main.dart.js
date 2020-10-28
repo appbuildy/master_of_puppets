@@ -7,7 +7,7 @@ if(!(r.__proto__&&r.__proto__.p===s.prototype.p))return false
 try{if(typeof navigator!="undefined"&&typeof navigator.userAgent=="string"&&navigator.userAgent.indexOf("Chrome/")>=0)return true
 if(typeof version=="function"&&version.length==0){var q=version()
 if(/^\d+\.\d+\.\d+\.\d+$/.test(q))return true}}catch(p){}return false}()
-function setFunctionNamesIfNecessary(a){function t(){};if(typeof t.name=="string")return
+function setFunctionNamesIfNecessary(a){function t(){};if(typeof t.name=="string")returnhttps://www.appbuildy.com/app_build/
 for(var s=0;s<a.length;s++){var r=a[s]
 var q=Object.keys(r)
 for(var p=0;p<q.length;p++){var o=q[p]
@@ -61743,7 +61743,7 @@ j=T.aD(H.a([k,T.br(F.hY(p,!1,new E.V3(q),H.a([new Q.at("9",9,p),new Q.at("10",10
 k=T.P(p,10,p)
 s=T.P(L.av("Weight",p,p,p,p,$.cv(),p),p,59)
 r=J.ag(m.h(0,"FontWeight"))
-return T.ax(H.a([new V.hP(q.e,q.d,"FontColor",m,p,p),l,j,k,T.aD(H.a([s,T.br(F.hY(p,!1,new E.V4(q),H.a([new Q.at("Thin",C.ko,p),new Q.at("Light",C.t7,p),new Q.at("Regular",C.L,p),new Q.at("Medium",C.a9,p),new Q.at("Semi-Bold",C.el,p),new Q.at("Bold",C.c3,p),new Q.at("Black",C.ny,p)],i),p,r),1)],h),C.k,C.a3,C.j),T.P(p,13,p),T.ax(H.a([L.av("Alignment",p,p,p,p,$.cv(),p),T.P(p,9,p),T.aD(H.a([T.aD(H.a([new A.kp(J.d(J.ag(m.h(0,o)),C.W),"https://www.appbuildy.com/app_build/icons/text/horizontal-left.svg",new E.V5(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,o)),C.k),"https://www.appbuildy.com/app_build/icons/text/horizontal-center.svg",new E.V6(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,o)),C.ib),"assets/icons/text/horizontal-right.svg",new E.V7(q),p)],h),C.k,C.l,C.j),T.aD(H.a([new A.kp(J.d(J.ag(m.h(0,n)),C.l),"assets/icons/text/vertical-top.svg",new E.V8(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,n)),C.b2),"assets/icons/text/vertical-center.svg",new E.V9(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,n)),C.lC),"assets/icons/text/vertical-bottom.svg",new E.Va(q),p)],h),C.k,C.l,C.j)],h),C.k,C.a3,C.j)],h),C.W,C.l,C.j)],h),C.k,C.l,C.f4)}}
+return T.ax(H.a([new V.hP(q.e,q.d,"FontColor",m,p,p),l,j,k,T.aD(H.a([s,T.br(F.hY(p,!1,new E.V4(q),H.a([new Q.at("Thin",C.ko,p),new Q.at("Light",C.t7,p),new Q.at("Regular",C.L,p),new Q.at("Medium",C.a9,p),new Q.at("Semi-Bold",C.el,p),new Q.at("Bold",C.c3,p),new Q.at("Black",C.ny,p)],i),p,r),1)],h),C.k,C.a3,C.j),T.P(p,13,p),T.ax(H.a([L.av("Alignment",p,p,p,p,$.cv(),p),T.P(p,9,p),T.aD(H.a([T.aD(H.a([new A.kp(J.d(J.ag(m.h(0,o)),C.W),"https://www.appbuildy.com/app_build/icons/text/horizontal-left.svg",new E.V5(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,o)),C.k),"https://www.appbuildy.com/app_build/icons/text/horizontal-center.svg",new E.V6(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,o)),C.ib),"https://www.appbuildy.com/app_build/icons/text/horizontal-right.svg",new E.V7(q),p)],h),C.k,C.l,C.j),T.aD(H.a([new A.kp(J.d(J.ag(m.h(0,n)),C.l),"https://www.appbuildy.com/app_build/icons/text/vertical-top.svg",new E.V8(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,n)),C.b2),"https://www.appbuildy.com/app_build/icons/text/vertical-center.svg",new E.V9(q),p),T.P(p,p,8),new A.kp(J.d(J.ag(m.h(0,n)),C.lC),"https://www.appbuildy.com/app_build/icons/text/vertical-bottom.svg",new E.Va(q),p)],h),C.k,C.l,C.j)],h),C.k,C.a3,C.j)],h),C.W,C.l,C.j)],h),C.k,C.l,C.f4)}}
 E.V3.prototype={
 $1:function(a){var s=new G.cF()
 s.O("FontSize",a.b,null)
