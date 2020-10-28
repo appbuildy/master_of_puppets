@@ -9,6 +9,44 @@ describe Api::ProjectsController do
     sign_in user
   end
 
+  describe 'GET #show' do
+    before do
+      allow(AirtableTables)
+        .to receive(:new)
+        .and_return(double(call: []))
+    end
+
+    let!(:project) { create :project, user: user }
+
+    context 'when given slug' do
+      before do
+        sign_out user
+      end
+      subject { get :show, params: { id: project.slug } }
+
+      it 'returns project by given slug' do
+        subject
+
+        body = JSON(response.body)
+
+        expect(body['id']).to eq(project.id)
+      end
+    end
+  end
+
+  describe 'GET #index' do
+    let!(:project) { create :project, user: user }
+    subject do
+      get :index
+    end
+
+    it 'renders' do
+      subject
+
+      expect(JSON(response.body).count).to eq(1)
+    end
+  end
+
   describe 'PATCH #update' do
     let(:project) { create :project, user: user }
 

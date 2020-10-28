@@ -2,19 +2,21 @@
 
 module Api
   class ProjectsController < BaseController
-    before_action :authenticate_user!
+    before_action :authenticate_user!, except: %i[show]
     before_action :set_project, except: %i[index create]
-    MOCK = 'https://previews.123rf.com/images/fotojagodka/fotojagodka2006/fotojagodka200600028/150450124-happy-cat-breed-scottish-fold-over-a-white-banner.jpg'
 
     def index
-      render json: current_user.projects.map do |pr|
+      projects = current_user.projects.map do |pr|
         {
+          name: pr.name,
           id: pr.id,
-          photo: MOCK,
+          photo: ActionController::Base.helpers.asset_url(Project.random_photo),
+          gradient: Project.random_gradient,
           updated_at: pr.updated_at,
           created_at: pr.created_at
         }
       end
+      render json: projects
     end
 
     def update
@@ -23,18 +25,32 @@ module Api
     end
 
     def show
-      render json: @project
+      project = @project
+        .attributes
+        .merge(
+          public_url: project_url(id: @project.id, project_preview: true, project_id: @project.slug),
+          tables: AirtableTables.new(@project.airtable_credentials.to_h['base']).call.map(&:to_h),
+          airtable_credentials: AirtableCredentials.new(@project.airtable_credentials).to_hash
+        )
+      render json: project
     end
 
     def create
-      project = current_user.projects.create(project_params)
+      project = current_user.projects
+        .create(project_params.merge(slug: Haikunator.haikunate))
+
       render json: project
     end
 
     private
 
     def set_project
-      @project = current_user.projects.find(params[:id])
+      @project =
+        if current_user
+          current_user.projects.find_by(id: params[:id])
+        else
+          Project.find_by(slug: params[:id])
+        end
     end
 
     def project_params

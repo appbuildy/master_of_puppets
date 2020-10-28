@@ -5,7 +5,6 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
-gem 'selenium-webdriver'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -22,6 +21,8 @@ gem 'turbolinks', '~> 5'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'jbuilder', '~> 2.7'
 gem 'rack-cors'
+gem 'rest-client'
+gem 'haikunator'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'koala'
 # Use Redis adapter to run Action Cable in production
