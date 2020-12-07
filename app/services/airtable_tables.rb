@@ -5,7 +5,7 @@ class AirtableTables
   SEARCH_TERM = 'window.initData ='
 
   def initialize(shared_url = 'https://airtable.com/shrRZPMRGEuB2PJgR')
-    @shared_url = shared_url
+    @shared_url = request_url(shared_url)
   end
 
   def call
@@ -22,6 +22,14 @@ class AirtableTables
         base: table['applicationId']
       )
     end
+  end
+
+  private
+
+  def request_url(url)
+    return url if url.include?('https://airtable.com')
+
+    "https://airtable.com/#{url}"
   end
 
   attr_reader :shared_url
