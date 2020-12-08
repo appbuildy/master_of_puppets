@@ -27,7 +27,7 @@ class AirtableTables
   private
 
   def request_url(url)
-    return url if url.include?('https://airtable.com')
+    return url if url.blank? || url.include?('https://airtable.com')
 
     "https://airtable.com/#{url}"
   end
