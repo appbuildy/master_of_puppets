@@ -28,7 +28,7 @@ module Api
       project = @project
         .attributes
         .merge(
-          public_url: project_url(id: @project.id, project_preview: true, project_id: @project.slug),
+          public_url: project_url(id: @project.id, preview_mode: 'enabled', project_id: @project.slug),
           tables: AirtableTables.new(@project.airtable_credentials.to_h['base']).call.map(&:to_h),
           airtable_credentials: AirtableCredentials.new(@project.airtable_credentials).to_hash
         )
