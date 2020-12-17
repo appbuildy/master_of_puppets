@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   resources :projects, only: %i[show]
   namespace :api, defaults: { format: :json } do
+    resources :leads, only: %i[create]
     resource :user, only: %i[update], controller: 'user'
     resources :projects
     resources :airtable_tables, only: %i[index]
