@@ -31,13 +31,33 @@
 				need: document.getElementById('needSelect').value,
 			};
 			var body = JSON.stringify(preBody);
-			fetch('https://hooks.zapier.com/hooks/catch/8579222/owqflhq/', {
-				method: 'POST',
-				body: body,
+			var newBody = JSON.stringify(
+			{records: [{fields:{
+			Email: document.getElementById('emailSelect').value,
+            Role: document.getElementById('whoSelect').value,
+            Need: document.getElementById('needSelect').value,
+            }}]});
+
+			fetch('https://api.airtable.com/v0/appLwIYN5PVkUa8xd/Waiting%20users', {
+			    method: 'POST',
+			    headers: {
+                      'Content-Type': 'application/json',
+                      'Authorization': 'Bearer keyHbBamMiXZog1v5',
+                    },
+                body: newBody,
 			}).then(function(){
-				document.getElementById('answer').style.display = 'none';
-				document.getElementById('formAnswer').style.display = 'block';
-			});
+              				document.getElementById('answer').style.display = 'none';
+              				document.getElementById('formAnswer').style.display = 'block';
+              			});
+
+
+			// fetch('https://hooks.zapier.com/hooks/catch/8579222/owqflhq/', {
+			//	method: 'POST',
+			//	body: body,
+			//}).then(function(){
+			//	document.getElementById('answer').style.display = 'none';
+			//	document.getElementById('formAnswer').style.display = 'block';
+			//});
 		});
 	</script>
 <% end %>
