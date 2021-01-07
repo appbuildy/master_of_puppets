@@ -10,6 +10,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_SECRET_KEY']
+  config.omniauth :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET']
   config.navigational_formats = []
   config.jwt do |jwt|
     jwt.secret = 'I AM SECRET'
