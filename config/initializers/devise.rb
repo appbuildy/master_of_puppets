@@ -16,7 +16,8 @@ Devise.setup do |config|
     jwt.secret = 'I AM SECRET'
     jwt.dispatch_requests = [
       ['POST', %r{^/login$}],
-      ['GET', %r{^/auth/facebook/callback$}]
+      ['GET', %r{^/auth/facebook/callback$}],
+      ['GET', %r{^/auth/google_oauth2/callback$}]
     ]
     jwt.revocation_requests = [
       ['DELETE', %r{^/logout$}]
