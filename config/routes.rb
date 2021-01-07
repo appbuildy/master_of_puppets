@@ -10,6 +10,7 @@ Rails.application.routes.draw do
              },
              controllers: {
                sessions: 'sessions',
+               omniauth_callbacks: 'users/omniauth_callbacks',
                registrations: 'registrations'
              }
   root to: 'root#show'

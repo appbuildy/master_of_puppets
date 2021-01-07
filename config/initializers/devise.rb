@@ -9,11 +9,13 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_SECRET_KEY']
   config.navigational_formats = []
   config.jwt do |jwt|
     jwt.secret = 'I AM SECRET'
     jwt.dispatch_requests = [
-      ['POST', %r{^/login$}]
+      ['POST', %r{^/login$}],
+      ['GET', %r{^/auth/facebook/callback$}]
     ]
     jwt.revocation_requests = [
       ['DELETE', %r{^/logout$}]
