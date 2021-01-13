@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
-  before_action :add_www_subdomain
+  before_action :add_www_subdomain, if: -> { Rails.env.production? }
 
   def add_www_subdomain
     unless /^www/.match(request.host)
