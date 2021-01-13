@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   def add_www_subdomain
     unless /^www/.match(request.host)
-      redirect_to("#{request.protocol}x.com#{request.request_uri}",
+      redirect_to("#{request.protocol}appbuildy.com#{request.request_uri}",
                   :status => 301)
     end
   end
