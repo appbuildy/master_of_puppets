@@ -1,5 +1,14 @@
 class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
+  before_filter :add_www_subdomain
+
+  def add_www_subdomain
+    unless /^www/.match(request.host)
+      redirect_to("#{request.protocol}x.com#{request.request_uri}",
+                  :status => 301)
+    end
+  end
+
   def render_resource(resource)
     if resource.errors.empty?
       render json: resource
