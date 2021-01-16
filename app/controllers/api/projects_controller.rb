@@ -47,7 +47,7 @@ module Api
     def set_project
       @project =
         if current_user
-          current_user.projects.find_by(id: params[:id])
+          current_user.projects.find_by(id: params[:id]) || Project.find_by(slug: params[:id])
         else
           Project.find_by(slug: params[:id])
         end
