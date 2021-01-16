@@ -115,6 +115,8 @@ GEM
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
       sassc-rails (>= 2.0.0)
+    bugsnag (6.19.0)
+      concurrent-ruby (~> 1.0)
     builder (3.2.4)
     capybara (3.33.0)
       addressable
@@ -354,6 +356,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.5.2)
+  bugsnag (~> 6.19)
   capybara (>= 2.15)
   devise-jwt (~> 0.7.0)
   dotenv-rails
