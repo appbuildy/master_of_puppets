@@ -46,9 +46,12 @@
                     },
                 body: newBody,
 			}).then(function(){
-              				document.getElementById('answer').style.display = 'none';
-              				document.getElementById('formAnswer').style.display = 'block';
+//               				document.getElementById('answer').style.display = 'none';
+//              				document.getElementById('formAnswer').style.display = 'block';
               			});
+
+              			var url = "https://build.appbuildy.com/signup?email=" + document.getElementById('emailSelect').value;
+                      window.location.href = url;
 
 
 			// fetch('https://hooks.zapier.com/hooks/catch/8579222/owqflhq/', {
@@ -70,8 +73,8 @@
 			<!-- <a href="#" class="menu__link">Pricing</a> -->
 		</nav>
 		<div class="login" id="popups">
-			<!-- <a href="#" class="btn_1 border-gradient">Log In</a> -->
-			<a href="#popup-form" data-effect="mfp-zoom-in" class="btn_2 popup-with-form">Request Access</a>
+			<a href="https://build.appbuildy.com/login  " class="btn_1 border-gradient">Log In</a>
+			<a href="#popup-form" data-effect="mfp-zoom-in" class="btn_2 popup-with-form">Sign Up</a>
 		</div>
 	</div>
 </header>
@@ -121,21 +124,32 @@
 	</div>
 </section>
 
-<section class="integrations">
+<!-- <section class="integrations">
 	<div class="container">
 		<h2 class="title">Integrations Built In</h2>
 		<div class="integrations__wrapper">
 			<img src="images/icons/integration.svg" alt="integration" class="integrations__img">
 			<p class="integrations__title">Airtable</p>
-			<p class="integrations__description">Connect your tables to synchronize every listing, text or image in your app remotely. Add and edit data anytime you want.</p>
+			<p class="integrations__description">Connect your tables to synchronize every listing, text or image in your app remotely. Add and edit data anytime you want</p>
 			<a class="btn_2">Available now</a>
+		</div>
+	</div>
+</section> -->
+
+<section class="integrations">
+	<div class="container">
+		<h2 class="title">Powered by your Data </h2>
+		<div class="integrations__wrapper">
+			<p class="integrations__title"><img src="images/icons/integration.svg" alt="integration" class="integrations__img"> Airtable</p>
+			<p class="integrations__description">Connect your tables to synchronize every listing, text or image in your app remotely. Add and edit data anytime you want.</p>
+			<div class="integrations__preview-container"><img src="images/airtable_phone.png" alt="airtable" class="integrations__phone"> <img src="images/airtable_preview.png" alt="airtable" class="integrations__preview"></div>
 		</div>
 	</div>
 </section>
 
 <section class="more">
 	<div class="container">
-		<p class="more__title">And so much more…</p>
+		<p class="title">And so much more…</p>
 		<div class="more__wrapper">
 
 			<div class="more__item">
@@ -150,7 +164,7 @@
 
 			<div class="more__item">
 				<img src="images/icons/icon_3.svg" alt="safari" class="more__icon">
-				<p class="more__text"><span class="blue">Easy</span><br>No-code<br>skills required</p>
+				<p class="more__text"><span class="blue">Real Time</span><br>Preview<br>in the Web</p>
 			</div>
 
 			<div class="more__item">
@@ -165,7 +179,7 @@
 <section class="start">
 	<div class="container">
 		<img src="images/icons/logotype_icon.svg" alt="logotype icon" class="start__icon">
-		<h2 class="title">Just Give It a Try.</h2>
+		<h2 class="title">Without a line of code.</h2>
 		<a class="btn_2 popup-with-form" href="#popup-form" data-effect="mfp-zoom-in">Get Started for Free</a>
 	</div>
 </section>

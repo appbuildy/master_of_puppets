@@ -3,12 +3,12 @@
   padding-bottom: 130px;
 
   .title {
-    padding: 100px 0 50px;
+    padding: 100px 0 35px;
   }
 
   &__wrapper {
     text-align: center;
-    background-image: url(../images/integration_bg.svg);
+    //background-image: url(../images/integration_bg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,17 +20,33 @@
     }
   }
 
+  &__img {
+    width: 65px;
+    margin-right: 13px;
+  }
+
   &__title {
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
+    vertical-align: middle;
     letter-spacing: -1.46341px;
-    padding-top: 20px;
+  }
+
+  &__preview {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  &__phone {
+    max-width: 300px;
+    margin-right: -35px;
+    width: 100%;
   }
 
   &__description {
-    max-width: 484px;
+    max-width: 600px;
     margin: 0 auto;
     color: #000;
     opacity: 0.6;
