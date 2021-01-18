@@ -73,8 +73,8 @@
 			<!-- <a href="#" class="menu__link">Pricing</a> -->
 		</nav>
 		<div class="login" id="popups">
-			<a href="https://build.appbuildy.com/login" class="btn_1 border-gradient">Log In</a>
-			<a href="#popup-form" data-effect="mfp-zoom-in" class="btn_2 popup-with-form">Get Access</a>
+			<a href="https://build.appbuildy.com/login" onclick="mixpanel.track('landing log in clicked')" class="btn_1 border-gradient">Log In</a>
+			<a href="#popup-form" data-effect="mfp-zoom-in" onclick="mixpanel.track('landing get access clicked')" class="btn_2 popup-with-form">Get Access</a>
 		</div>
 	</div>
 </header>
@@ -83,7 +83,7 @@
 	<div class="container">
 		<h1 class="hero__title">Build Mobile Apps <br /><span class="hero__title--animated">Without Code</span></h1>
 		<p class="hero__description">Create, customize and launch mobile apps<br>in your browser visually with drag and drop</p>
-		<a class="hero__button btn_2 popup-with-form" href="#popup-form" data-effect="mfp-zoom-in">Get Started for Free</a>
+		<a class="hero__button btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing get started for free top clicked')" data-effect="mfp-zoom-in">Get Started for Free</a>
 	</div>
 </section>
 
@@ -183,7 +183,7 @@
 	<div class="container">
 		<img src="images/icons/logotype_icon.svg" alt="logotype icon" class="start__icon">
 		<h2 class="title">Without a line of code.</h2>
-		<a class="btn_2 popup-with-form" href="#popup-form" data-effect="mfp-zoom-in">Get Started for Free</a>
+		<a class="btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing get started for free bottom clicked')" data-effect="mfp-zoom-in">Get Started for Free</a>
 	</div>
 </section>
 
@@ -235,7 +235,7 @@
 				<textarea id="textarea" placeholder="What would you like to build" rows="2"></textarea>
 			</li>-->
 			<li>
-				<button id="buttonSelect" type="button" style="margin-top: 15px;" name="button" class="btn_2">Get Access</button>
+				<button id="buttonSelect" onclick="mixpanel.track('landing form submitted')" type="button" style="margin-top: 15px;" name="button" class="btn_2">Get Access</button>
 			</li>
 		</ul>
 	</fieldset>
@@ -245,3 +245,9 @@
 		<p>Thanks for the interest, we will send you an e-mail soon</p>
 	</div>
 </form>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("92099c241c5cd779ea91d8aaeddecb9d", {batch_requests: true})</script>
