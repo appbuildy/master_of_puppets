@@ -45,7 +45,11 @@
 }
 
 @media (max-width: 768px) {
-  .more {
+  .faq {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     .container {
       width: 100%;
     }
@@ -56,13 +60,15 @@
     }
 
     &__wrapper {
-      grid-template-columns: 1fr 1fr;
+      //grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+      grid-template-columns: 1fr;
       grid-gap: 5px;
     }
 
     &__item {
       border-radius: 0;
       padding: 18px;
+      margin-top: 10px;
     }
 
     &__text {
