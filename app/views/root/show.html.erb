@@ -97,12 +97,12 @@
 		<div class="preview__box">
 
 			<div class="preview__item turquoise">
-				<h3 class="preview__title">Amazing performance for both platforms</h3>
-				<p class="preview__description">Native look and feel for your iOS and Android apps. You could never see the difference compared to the apps built with code.</p>
+				<h3 class="preview__title">Marvelous performance for both platforms</h3>
+				<p class="preview__description">Native look and feel for your iOS and Android apps. You won't see the difference compared to the apps built with code.</p>
 				<div class="preview__icons">
 					<img src="images/icons/apple.svg" alt="apple">
 					<img src="images/icons/android.svg" alt="android">
-					<img src="images/icons/web.svg" alt="web">
+					<!-- <img src="images/icons/web.svg" alt="web"> -->
 				</div>
 			</div>
 
@@ -170,11 +170,42 @@
 		<div class="examples__wrapper">
 			<p class="examples__description">See what you can build with AppBuildy by checking these example apps</p>
 			<div class="examples__preview-container">
-                <div class="examples__preview-item"><img src="images/sessions.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Conference Events</div> <a target="_blank" href="https://build.appbuildy.com/preview/134/?project_id=weathered-glade-7406" class="btn_1 border-gradient">Try Now</a> </div>
-				<div class="examples__preview-item"><img src="images/coffee.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Coffee Menu</div> <a target="_blank" href="https://build.appbuildy.com/preview/181/?project_id=still-silence-2767" class="btn_1 border-gradient">Try Now</a> </div>
-				<div class="examples__preview-item"><img src="images/real-estate.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Real Estate Marketplace</div> <a target="_blank" href="https://build.appbuildy.com/preview/183/?project_id=proud-cherry-1054" class="btn_1 border-gradient">Try Now</a> </div>
-                <!-- <div class="examples__preview-item"><img src="images/climbing-app.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Climbing Guide</div> <a target="_blank" href="https://build.appbuildy.com/preview/134/?project_id=weathered-glade-7406" class="btn_1 border-gradient">Try Now</a> </div> --!>
+                <div class="examples__preview-item"><img src="images/sessions.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Conference Events</div> <a  onclick="mixpanel.track('landing page example clicked' , { type: 'events'})" target="_blank" href="https://build.appbuildy.com/preview/134/?project_id=weathered-glade-7406" class="btn_1 border-gradient">Try Now</a> </div>
+				<div class="examples__preview-item"><img src="images/coffee.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Coffee Menu</div> <a  onclick="mixpanel.track('landing page example clicked' , { type: 'coffee'})" target="_blank" href="https://build.appbuildy.com/preview/181/?project_id=still-silence-2767" class="btn_1 border-gradient">Try Now</a> </div>
+				<div class="examples__preview-item"><img src="images/real-estate.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Real Estate Marketplace</div> <a  onclick="mixpanel.track('landing page example clicked', { type: 'real estate'})" target="_blank" href="https://build.appbuildy.com/preview/183/?project_id=proud-cherry-1054" class="btn_1 border-gradient">Try Now</a> </div>
+                <!-- <div class="examples__preview-item"><img src="images/climbing-app.png" alt="airtable" class="examples__phone"> <div class="examples__preview-title">Climbing Guide</div> <a target="_blank" href="https://build.appbuildy.com/preview/134/?project_id=weathered-glade-7406" class="btn_1 border-gradient">Try Now</a> </div> -->
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="faq">
+	<div class="container">
+		<p class="title">FAQ</p>
+		<div class="faq__wrapper">
+
+			<div class="faq__item">
+				<p class="more__text">What kind of apps can I build?</p>
+				<p class="faq__answer">
+					It's entirely up to you. You can build simple apps like Instagram, marketplaces, HR app, up to the MVP of your unique startup. AppBuildy allows your apps to have various designs, connect it to the data, and add functionality to it.
+				</p>
+			</div>
+
+			<div class="faq__item">
+				<p class="faq__text">Can I launch my app in the App Store and Google Play?</p>
+				<p class="faq__answer">Yes, you'll be able to launch your app to App Store and Google Play, via AppBuildy whenever you want. It will cost you $49</p>
+			</div>
+
+			<div class="faq__item">
+				<p class="faq__text">How much does it cost?</p>
+				<p class="faq__answer">You can develop apps on the web absolutely free, we're charging $49 for launcunh your app to the App Store and Google Play. You can pay when your app is ready to be launched.</p>
+			</div>
+
+			<div class="faq__item">
+				<p class="faq__text">Could I earn money from apps?</p>
+				<p class="faq__answer">Yes, we plan to add Stripe integration in future releases to get you started monetizing your app with payment forms, e-commerce, and memberships.</p>
+			</div>
+
 		</div>
 	</div>
 </section>
