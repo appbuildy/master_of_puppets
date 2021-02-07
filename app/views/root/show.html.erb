@@ -74,7 +74,7 @@
 		</nav>
 		<div class="login" id="popups">
 			<a href="https://build.appbuildy.com/login" onclick="mixpanel.track('landing log in clicked')" class="btn_1 border-gradient">Log In</a>
-			<a href="#popup-form" data-effect="mfp-zoom-in" onclick="mixpanel.track('landing get access clicked')" class="btn_2 popup-with-form">Get Access</a>
+			<a href="#popup-form" data-effect="mfp-zoom-in" onclick="mixpanel.track('landing open popup', { type: 'header get access' })" class="btn_2 popup-with-form">Get Access</a>
 		</div>
 	</div>
 </header>
@@ -83,7 +83,7 @@
 	<div class="container">
 		<h1 class="hero__title">Build Mobile Apps <br /><span class="hero__title--animated">Without Code</span></h1>
 		<p class="hero__description">Create, customize and launch mobile apps<br>in your browser visually with drag and drop</p>
-		<a class="hero__button btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing get started for free top clicked')" data-effect="mfp-zoom-in">Get Started for Free</a>
+		<a class="hero__button btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing open popup', { type: 'top get started for free' })" data-effect="mfp-zoom-in">Get Started for Free</a>
 	</div>
 </section>
 
@@ -214,7 +214,7 @@
 	<div class="container">
 		<img src="images/icons/logotype_icon.svg" alt="logotype icon" class="start__icon">
 		<h2 class="title">Without a line of code.</h2>
-		<a class="btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing get started for free bottom clicked')" data-effect="mfp-zoom-in">Get Started for Free</a>
+		<a class="btn_2 popup-with-form" href="#popup-form" onclick="mixpanel.track('landing open popup', { type: 'bottom get access' })" data-effect="mfp-zoom-in">Get Started for Free</a>
 	</div>
 </section>
 
