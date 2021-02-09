@@ -3,7 +3,7 @@ class SessionsController < Devise::SessionsController
 
   def create
     self.resource = AuthenticationService.new(params).call
-    sign_in(resource_name, resource)
+    sign_in resource
     cookies[:jwt] = request.env['warden-jwt_auth.token']
 
     respond_with resource, location: after_sign_in_path_for(resource)
