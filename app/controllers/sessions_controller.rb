@@ -3,10 +3,14 @@ class SessionsController < Devise::SessionsController
 
   def create
     self.resource = AuthenticationService.new(params).call
-    sign_in resource
-    cookies[:jwt] = request.env['warden-jwt_auth.token']
+    if resource
+      sign_in resource
+      cookies[:jwt] = request.env['warden-jwt_auth.token']
 
-    respond_with resource, location: after_sign_in_path_for(resource)
+      respond_with resource, location: after_sign_in_path_for(resource)
+    else
+      render json: { error: 'invalid login or password' }, status: 422
+    end
   end
 
   private
