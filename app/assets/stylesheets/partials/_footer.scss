@@ -24,6 +24,17 @@
     }
   }
 
+  &__email{
+    color: #007aff;
+    opacity: 0.7;
+
+    &:hover {
+      color: #007aff;
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
   a+a {
     padding-left: 40px;
   }
@@ -33,6 +44,12 @@
   .footer {
     padding-top: 80px;
     margin-bottom: 21px;
+
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
 
     .container {
       flex-direction: column;
@@ -47,6 +64,7 @@
     }
 
     &__item {
+      margin-top: 10px;
       font-size: 16px;
     }
   }
