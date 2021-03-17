@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   root to: 'root#show'
   resource :upvoty, only: %i[show], controller: 'upvoty'
 
+  resource :shopify, only: %i[show], controller: 'shopify'
+
   get '/me', to: 'me#show'
 
   resources :projects, only: %i[show]

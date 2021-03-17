@@ -1,0 +1,39 @@
+.maxWidthImg{
+    max-width: 350px;
+}
+
+.alignText{
+    margin-left: 120px;
+}
+
+.imgAligner {
+    text-align: center;
+}
+
+.containerWithTopPadding {
+    padding-top: 45px;
+}
+
+.containerWithBottomPadding {
+    padding-bottom: 45px;
+}
+
+.platformText{
+    flex: 2;
+}
+.platformVisual{
+    flex: 3;
+}
+
+@media screen and (max-width: 700px) {
+    .platformVisual{
+        flex: auto;
+    }
+    .platformText{
+        flex: auto;
+    }
+
+    .alignText {
+        margin-left: 0;
+    }
+}
